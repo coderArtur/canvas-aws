@@ -1,10 +1,10 @@
-from config import URL_GRADES, BASE_URL
+from config import URL_ATIVIDADES, BASE_URL
 import time
 import re
 
 def obter_tarefas_pendentes(page):
     tarefas = []
-    page.goto(URL_GRADES)
+    page.goto(URL_ATIVIDADES)
     page.wait_for_load_state('networkidle')
     
     # Ordenar por Módulo para respeitar a linha de tempo do curso

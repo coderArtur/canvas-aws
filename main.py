@@ -1,5 +1,6 @@
 # pyrefly: ignore [missing-import]
 from playwright.sync_api import sync_playwright
+from config import OCULTAR_TELA
 from login import realizar_login
 from tarefas import obter_tarefas_pendentes, abrir_tarefa
 from lab import resolver_lab
@@ -20,8 +21,7 @@ def main():
     escolha = input("Digite o número (pressione ENTER para 3): ").strip()
     
     with sync_playwright() as p:
-        # headless=False para você ver as ações acontecendo na tela
-        browser = p.chromium.launch(headless=False)
+        browser = p.chromium.launch(headless=OCULTAR_TELA)
         context = browser.new_context()
         page = context.new_page()
         
