@@ -112,7 +112,9 @@ def resolver_kc(nova_aba, nome_kc, gabarito):
                         break # Se achou 100% igual, não precisa olhar o resto
                         
                     # 2. Substring ou Fuzzy matching
-                    score_substring = 0.95 if (len(resposta_norm) > 4 and (resposta_norm in texto_opcao_norm or texto_opcao_norm in resposta_norm)) else 0.0
+                    # Aceita substrings se a palavra tiver pelo menos 3 letras, mas se for apenas um número, aceita com 1 dígito.
+                    tamanho_minimo = 1 if resposta_norm.replace(' ', '').isdigit() else 3
+                    score_substring = 0.95 if (len(resposta_norm) >= tamanho_minimo and (resposta_norm in texto_opcao_norm or texto_opcao_norm in resposta_norm)) else 0.0
                     score_fuzzy = difflib.SequenceMatcher(None, resposta_norm, texto_opcao_norm).ratio()
                     
                     score_atual = max(score_substring, score_fuzzy)
@@ -124,8 +126,8 @@ def resolver_kc(nova_aba, nome_kc, gabarito):
                 # Clica apenas na melhor opção encontrada para esta resposta do gabarito (se for >= 80% similar)
                 if melhor_opcao and maior_score > 0.80:
                     try:
-                        melhor_opcao.click(timeout=500)
-                        time.sleep(0.3)
+                        melhor_opcao.click(timeout=3000)
+                        time.sleep(1) # Dá mais tempo para o canvas processar o clique antes de ir pra próxima
                     except:
                         pass
             
