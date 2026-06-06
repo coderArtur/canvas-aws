@@ -583,7 +583,7 @@
             "O tempo necessário para acessar recursos de computação é reduzido"
         ],
         [
-            "Os usuários podem implantar suas soluções em várias Regiões.."
+            "Os usuários podem implantar suas soluções em várias Regiões"
         ]
     ],
     "209": [
@@ -950,13 +950,16 @@
             "Servidor da web"
         ],
         [
-            "Várias máquinas.. As máquinas.."
+            "As máquinas virtuais podem reduzir a quantidade de recursos de computação desperdiçados de servidores subutilizados.",
+            "Várias máquinas virtuais podem ser executadas em um único computador físico."
         ],
         [
-            "Planejar e analisar"
+            "Planejar",
+            "analisar"
         ],
         [
-            "Oracle e MySQL"
+            "MySQL",
+            "Oracle"
         ],
         [
             "Amazon EC2"
@@ -964,7 +967,8 @@
     ],
     "4": [
         [
-            "Desenvolvedor de software e gerente de projeto"
+            "Desenvolvedor de software",
+            "Gerente de projeto"
         ],
         [
             "Desenvolvedor de software"
@@ -973,10 +977,12 @@
             "Engenheiro de garantia de qualidade"
         ],
         [
-            "Proteger os dados e configurar acesso aos dados"
+            "Proteger os dados",
+            "Configurar acesso aos dados"
         ],
         [
-            "Atribuir tarefas aos membros da equipe e desenvolver um plano de projetos"
+            "Atribuir tarefas aos membros da equipe",
+            "desenvolver um plano de projetos"
         ]
     ],
     "226": [

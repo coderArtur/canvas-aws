@@ -2,6 +2,7 @@ import time
 import re
 import string
 import unicodedata
+import difflib
 
 def normalizar_texto(texto):
     if not texto:
@@ -93,6 +94,9 @@ def resolver_kc(nova_aba, nome_kc, gabarito):
             for resposta_gabarito in respostas_da_questao:
                 resposta_norm = normalizar_texto(resposta_gabarito)
                 
+                melhor_opcao = None
+                maior_score = 0.0
+                
                 for opcao in opcoes_na_tela:
                     texto_opcao = opcao.get_attribute('data-acc-text')
                     # Ignorar se estiver vazio ou se for um botão de navegação
@@ -101,13 +105,29 @@ def resolver_kc(nova_aba, nome_kc, gabarito):
                         
                     texto_opcao_norm = normalizar_texto(texto_opcao)
                     
-                    # Se os textos limpos baterem perfeitamente (ou um fizer parte do outro)
-                    if resposta_norm == texto_opcao_norm or (len(resposta_norm) > 5 and resposta_norm in texto_opcao_norm):
-                        try:
-                            opcao.click(timeout=500)
-                            time.sleep(0.3)
-                        except:
-                            pass
+                    # 1. Bate perfeitamente
+                    if resposta_norm == texto_opcao_norm:
+                        melhor_opcao = opcao
+                        maior_score = 1.0
+                        break # Se achou 100% igual, não precisa olhar o resto
+                        
+                    # 2. Substring ou Fuzzy matching
+                    score_substring = 0.95 if (len(resposta_norm) > 4 and (resposta_norm in texto_opcao_norm or texto_opcao_norm in resposta_norm)) else 0.0
+                    score_fuzzy = difflib.SequenceMatcher(None, resposta_norm, texto_opcao_norm).ratio()
+                    
+                    score_atual = max(score_substring, score_fuzzy)
+                    
+                    if score_atual > maior_score:
+                        maior_score = score_atual
+                        melhor_opcao = opcao
+                
+                # Clica apenas na melhor opção encontrada para esta resposta do gabarito (se for >= 80% similar)
+                if melhor_opcao and maior_score > 0.80:
+                    try:
+                        melhor_opcao.click(timeout=500)
+                        time.sleep(0.3)
+                    except:
+                        pass
             
         # Clicar no botão ENVIAR da questão atual
         frame.locator('button#submit:has(div.view-content:has-text("ENVIAR"))').click()
