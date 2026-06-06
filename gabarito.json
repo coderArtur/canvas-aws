@@ -1,0 +1,1998 @@
+{
+    "2": [
+        [
+            "Um conjunto de instruções que informa ao sistema como executar uma tarefa específica"
+        ],
+        [
+            "Conectar todos os componentes"
+        ],
+        [
+            "Placa de rede",
+            "Placa mãe"
+        ],
+        [
+            "Mantém dados temporariamente",
+            "Pode ser acessada rapidamente"
+        ],
+        [
+            "Ios",
+            "Amazon Linux 2"
+        ]
+    ],
+    "5": [
+        [
+            "Ela fornece recursos de tecnologia da informação (TI) sob demanda"
+        ],
+        [
+            "O fornecedor terceirizado gerencia a aquisição de recursos e o aplicativo. O desenvolvedor é responsável pelo conteúdo do aplicativo."
+        ],
+        [
+            "Plataforma como serviço (PaaS)"
+        ],
+        [
+            "Infraestrutura como serviço (IaaS)"
+        ],
+        [
+            "Nuvem híbrida"
+        ]
+    ],
+    "6": [
+        [
+            "Software como Serviço (SaaS)"
+        ],
+        [
+            "A AWS é um provedor de serviços de nuvem…"
+        ],
+        [
+            "Computação",
+            "Armazenamento"
+        ],
+        [
+            "SDK",
+            "CLI",
+            "Console"
+        ],
+        [
+            "Tutoriais e projetos"
+        ]
+    ],
+    "7": [
+        [
+            "Transferência de dados de saída do Amazon S3 para o Amazon CloudFront na mesma região",
+            "Transferência de dados de entrada da Internet para o Amazon S3"
+        ],
+        [
+            "Pagamento antecipado parcial",
+            "Nenhum pagamento antecipado",
+            "Pagamento total antecipado"
+        ],
+        [
+            "Selecione as três",
+            "Pode ajudar a identificar oportunidades de redução de custos.",
+            "Estima os custos mensais de serviços.",
+            "Oferece aos clientes a capacidade de criar estimativas para os casos de uso da AWS."
+        ],
+        [
+            "Computação",
+            "Armazenamento",
+            "Transferência de dados"
+        ],
+        [
+            "Calculadora de preços da AWS"
+        ]
+    ],
+    "8": [
+        [
+            "Escalabilidade"
+        ],
+        [
+            "Um ou mais data center(s) criado(s)…"
+        ],
+        [
+            "Uma área geográfica no mundo"
+        ],
+        [
+            "Duas ou mais"
+        ],
+        [
+            "Uma rede global de entrega de conteúdo (CDN).."
+        ]
+    ],
+    "9": [
+        [
+            "Segurança da nuvem"
+        ],
+        [
+            "Conformidade"
+        ],
+        [
+            "Garantir que os usuários insiram uma ID.."
+        ],
+        [
+            "Infraestrutura como serviço (IaaS)"
+        ],
+        [
+            "Software como serviço (SaaS)"
+        ]
+    ],
+    "10": [
+        [
+            "Chave de objeto"
+        ],
+        [
+            "11 9s"
+        ],
+        [
+            "Glarcier Deep Archive"
+        ],
+        [
+            "Transferência de dados para outras regiões AWS"
+        ],
+        [
+            "Os nomes de bucket são universais e devem ser exclusivos entre todos os nomes de bucket existentes no Amazon S3",
+            "Ele pode ser usado para hospedagem estática na web."
+        ]
+    ],
+    "12": [
+        [
+            "Ele fornece máquinas virtuais que são executadas na AWS."
+        ],
+        [
+            "Otimizada para memória"
+        ],
+        [
+            "Reinicializar"
+        ],
+        [
+            "Eles permitem todo o tráfego de saída por padrão.",
+            "Eles oferecem suporte adicionando regras que permitem o tráfego de fontes especificadas."
+        ],
+        [
+            "Instâncias Spot"
+        ]
+    ],
+    "196": [
+        [
+            "Função do IAM"
+        ],
+        [
+            "Determinar a imagem de máquina da Amazon (AMI) que será usada."
+        ],
+        [
+            "Mover o software de um ambiente para outro através do isolamento.",
+            "Querer gerenciar os recursos e suas respectivas políticas e supervisionar a segurança.",
+            "Ter um requisito de portabilidade e de manter um status de agnosticismo de fornecedor."
+        ],
+        [
+            "Amazon Neptune"
+        ],
+        [
+            "Fornecer acesso através de grupos de segurança relevantes.",
+            "Especificar um endereço IP elástico para associação.",
+            "Atualizar a tabela de rotas."
+        ],
+        [
+            "Status",
+            "Versão",
+            "Hora inicial"
+        ],
+        [
+            "5.120 bytes"
+        ],
+        [
+            "Envio de respostas a recursos em uma nuvem privada virtual (VPC) da AWS",
+            "Rastreamento do status do processo de configuração"
+        ],
+        [
+            "Amazon Elasticsearch Service (Amazon ES)",
+            "Cluster do Amazon Redshift",
+            "Amazon Simple Storage Service (Amazon S3)"
+        ]
+    ],
+    "197": [
+        [
+            "Pagamento conforme o uso"
+        ],
+        [
+            "Administração de sistemas como um serviço"
+        ],
+        [
+            "Verdadeiro"
+        ],
+        [
+            "Pagamento pelo armazenamento em rack.."
+        ],
+        [
+            "Vários ciclos de aquisição",
+            "Alta latência"
+        ],
+        [
+            "Velocidade e agilidade maiores"
+        ],
+        [
+            "Falso"
+        ],
+        [
+            "Existirem centenas de milhares de clientes agregados na nuvem"
+        ],
+        [
+            "SDK",
+            "CLI",
+            "Console"
+        ]
+    ],
+    "198": [
+        [
+            "NURI",
+            "PURI",
+            "AURI"
+        ],
+        [
+            "Transferência de dados de saída do Amazon S3 para Amazon CloudFront",
+            "Transferência de dados de ENTRADA da Internet para o Amazon S3",
+            "Até 1 GB de transferência de dados de SAÍDA do Amazon S3 para a Internet"
+        ],
+        [
+            "Falso"
+        ],
+        [
+            "Transferência de dados entre serviços",
+            "Transferência de dados de entrada"
+        ],
+        [
+            "Por segundo e por hora"
+        ],
+        [
+            "Economias de escala"
+        ],
+        [
+            "Verdadeiro"
+        ],
+        [
+            "Transferência gratuita de dados de entrada para instâncias do Amazon Elastic Compute Cloud (Amazon EC2)",
+            "Transferências de dados de saída gratuitas dentro da mesma região, dentro da mesma zona de disponibilidade e que usam um endereço IP privado"
+        ],
+        [
+            "Falso"
+        ]
+    ],
+    "199": [
+        [
+            "Locais de borda"
+        ],
+        [
+            "Diminuir"
+        ],
+        [
+            "Verdadeiro"
+        ],
+        [
+            "Regiões AWS"
+        ],
+        [
+            "Tolerante a falhas, elásticas e escaláveis"
+        ],
+        [
+            "Verdadeiro"
+        ],
+        [
+            "Um data center pode ser usado para mais de uma Zona de disponibilidade"
+        ],
+        [
+            "Cada região está localizada em uma área geográfica separada"
+        ],
+        [
+            "Múltiplas"
+        ],
+        [
+            "Falso"
+        ]
+    ],
+    "200": [
+        [
+            "Plataforma como serviço (PaaS)"
+        ],
+        [
+            "Verdadeiro"
+        ],
+        [
+            "Instâncias reservadas"
+        ],
+        [
+            "Instâncias dedicas"
+        ],
+        [
+            "Mensal"
+        ],
+        [
+            "Executa quatro instâncias reservadas.."
+        ],
+        [
+            "AMI e Tipo de instância"
+        ],
+        [
+            "As instâncias do Amazon EC2.."
+        ]
+    ],
+    "201": [
+        [
+            "Segurança da nuvem"
+        ],
+        [
+            "Em que país o conteúdo é armazenado e quais serviços da aws são usados"
+        ],
+        [
+            "Infraestrutura global segura",
+            "Infraestrutura que atende aos requisitos de conformidade"
+        ],
+        [
+            "Falso"
+        ],
+        [
+            "Manutenção de hardware físico"
+        ],
+        [
+            "AWS Security Token Service (STS)"
+        ],
+        [
+            "Alterne credenciais regularmente e monitore a atividade em sua conta da AWS."
+        ],
+        [
+            "Falso"
+        ],
+        [
+            "Política de uso aceitável"
+        ],
+        [
+            "Falso"
+        ],
+        [
+            "Verdadeiro"
+        ],
+        [
+            "Excluir as chaves de acesso do usuário-raiz"
+        ],
+        [
+            "Ativar a autenticação multifator (MFA)."
+        ],
+        [],
+        [
+            "Uma ferramenta on-line que ajuda a configurar recursos.."
+        ],
+        [
+            "Certificações e declarações",
+            "Leis, regulamentos e privacidade"
+        ],
+        [
+            "Acesso ao AWS Management Console e Acesso programático"
+        ],
+        []
+    ],
+    "202": [
+        [
+            "Amazon VPC"
+        ],
+        [
+            "/28"
+        ],
+        [
+            "/16"
+        ],
+        [
+            "NAT"
+        ],
+        [
+            "Falso"
+        ],
+        [
+            "Locais de borda"
+        ],
+        [
+            "NACL"
+        ],
+        [
+            "Uma tabela de rotas é criada por padrão"
+        ],
+        [
+            "1"
+        ],
+        [
+            "4"
+        ],
+        [
+            "Sub-rede"
+        ],
+        [
+            "CIDR"
+        ],
+        [
+            "Cinco"
+        ],
+        [
+            "Uma interface de rede virtual que você pode anexar a uma instância em uma Amazon Virtual Private Cloud (Amazon VPC)."
+        ],
+        [
+            "Verdadeiro"
+        ]
+    ],
+    "203": [
+        [
+            "Verdadeiro"
+        ],
+        [
+            "Em várias zonas de disponibilidade na mesma região"
+        ],
+        [
+            "Infrequent Acess, Standard Acecss e Glacier"
+        ],
+        [
+            "Em todo o mundo e em todas as contas da aws"
+        ],
+        [
+            "Armazenar conteúdo estático.."
+        ],
+        [
+            "Ficarem rapidamente acessíveis, exigindo persistência de longo prazo"
+        ],
+        [
+            "Falso"
+        ],
+        [
+            "Um contêiner para armazenar arquivos"
+        ],
+        [
+            "Falso"
+        ],
+        [
+            "O Amazon EBS é automaticamente replicado em uma zona de disponibilidade.",
+            "Os volumes do Amazon EBS podem ser criptografados de forma transparente para cargas de trabalho na instância anexada."
+        ]
+    ],
+    "204": [
+        [
+            "Tabela de banco de dados NoSQL usando o Amazon DynamoDB"
+        ],
+        [
+            "Verificação"
+        ],
+        [
+            "Amazon Redshift"
+        ],
+        [
+            "Um elemento de dados fundamental"
+        ],
+        [
+            "Chave primária"
+        ],
+        [
+            "Amazon Aurora"
+        ],
+        [
+            "Amazon DynamoDB"
+        ],
+        [
+            "Verdadeiro"
+        ]
+    ],
+    "205": [
+        [
+            "Basic, Desenvolvedor, Business e Enterprise"
+        ],
+        [
+            "Acesso em horário comercial ao Cloud Support Associates via e-mail",
+            "Um contato primário pode abrir um caso"
+        ],
+        [
+            "Acesso a uma análise do Well-Architected entregue pelos arquitetos de soluções da AWS"
+        ],
+        [
+            "Suporte Business e Suporte Enterprise"
+        ],
+        [
+            "Trusted Advisor"
+        ],
+        [
+            "Baixa, normal, alta, urgente e crítico."
+        ],
+        [
+            "1 hora ou menos"
+        ],
+        [
+            "0"
+        ],
+        [
+            "Como está o desempenho da infraestrutura",
+            "Recursos implantados que não estão sendo usados, mas estão incorrendo em cobranças",
+            "Se você está usando ou não tolerância a falhas"
+        ],
+        [
+            "Enterprise"
+        ]
+    ],
+    "206": [
+        [
+            "Rastreabilidade"
+        ],
+        [
+            "Envia tráfego para instâncias íntegras"
+        ],
+        [
+            "Inicia a instância do servidor web em várias zonas de disponibilidade",
+            "Aproveite o scaling para se recuperar de instâncias de falha"
+        ],
+        [
+            "Democratizar tecnologias avançadas e Usar arquiteturas sem servidor"
+        ],
+        [
+            "AWS Marketplace"
+        ],
+        [
+            "Apenas no perímetro"
+        ],
+        [
+            "http://169.254.169.254/latest/meta-data/"
+        ],
+        [
+            "Tolerância a falhas"
+        ],
+        [
+            "Alta disponibilidade"
+        ]
+    ],
+    "207": [
+        [
+            "Scaling e Elastic Load Balacing"
+        ],
+        [
+            "Amazon SNS"
+        ],
+        [
+            "Envia tráfego para instâncias íntegras"
+        ],
+        [
+            "Um listener"
+        ],
+        [
+            "AMI, tipo de instância e Nome de Configuração de execução"
+        ],
+        [
+            "15 meses"
+        ],
+        [
+            "Monitoramento básico (gratuito) e detalhado (custo adicional)"
+        ],
+        [
+            "Uma solicitação de página, Uma tentativa de conexão e Um ping"
+        ],
+        [
+            "Balanceador de carga clássica, network load balancer e application load balancer"
+        ]
+    ],
+    "208": [
+        [
+            "Pagar apenas quando os recursos de computação são consumidos",
+            "Pagar apenas pelo que é consumido"
+        ],
+        [
+            "As economias podem ser repassadas para os clientes quando mais clientes usam a AWS."
+        ],
+        [
+            "Velocidade e agilidade maiores"
+        ],
+        [
+            "O tempo necessário para acessar recursos de computação é reduzido"
+        ],
+        [
+            "Os usuários podem implantar suas soluções em várias Regiões.."
+        ]
+    ],
+    "209": [
+        [
+            "EFS E S3"
+        ],
+        [
+            "AWS IAM"
+        ],
+        [
+            "Computação e segurança, identidade e conformidade"
+        ],
+        [
+            "Amazon EC2"
+        ],
+        [
+            "Amazon VPC"
+        ]
+    ],
+    "167": [
+        [
+            "Documentos da AWS Well-Architected Framework"
+        ],
+        [
+            "Confiabilidade"
+        ],
+        [
+            "Testar os sistemas em escala de produção."
+        ],
+        [
+            "Instância Amazon Elastic Compute Cloud (Amazon EC2)"
+        ],
+        [
+            "Comercial e técnico"
+        ]
+    ],
+    "212": [
+        [
+            "AMI"
+        ],
+        [
+            "Security Group"
+        ],
+        [
+            "Endereço IP elástico"
+        ],
+        [
+            "Atribuir uma função de AWS Identity and Access Management (IAM) a uma instância Amazon Elastic Compute Cloud (Amazon EC2)"
+        ],
+        [
+            "Uso geral"
+        ]
+    ],
+    "213": [
+        [
+            "Política de roteamento ponderado"
+        ],
+        [
+            "Scaling em etapas"
+        ],
+        [
+            "Amazon CloudFront"
+        ],
+        [
+            "Application load balancer"
+        ],
+        [
+            "Listener"
+        ]
+    ],
+    "214": [
+        [
+            "Fargate"
+        ],
+        [
+            "Amazon ECR"
+        ],
+        [
+            "Tarefas"
+        ],
+        [
+            "AWS Lambda"
+        ],
+        [
+            "POST"
+        ]
+    ],
+    "215": [
+        [
+            "Amazon Aurora"
+        ],
+        [
+            "AWS DMS"
+        ],
+        [
+            "Amazon Redshift"
+        ],
+        [
+            "15 Réplicas"
+        ],
+        [
+            "Amazon DynamoDB"
+        ]
+    ],
+    "216": [
+        [
+            "NAT"
+        ],
+        [
+            "O virtual private cloud (VPC) não tem um gateway da Internet."
+        ],
+        [
+            "Endereço IP Elástico"
+        ],
+        [
+            "As associações de security group poderão ser adicionadas e modificadas depois que uma instância for criada.",
+            "Um security group pode ser aplicado em várias instâncias."
+        ],
+        [
+            "Sub-rede"
+        ]
+    ],
+    "217": [
+        [
+            "Armazenamento de instâncias"
+        ],
+        [
+            "Amazon S3 Intelligent-Tiering"
+        ],
+        [
+            "IOPS provisionados (SSD)"
+        ],
+        [
+            "Amazon EBS"
+        ],
+        [
+            "5 a 12 horas"
+        ]
+    ],
+    "218": [
+        [
+            "Alarmes do Amazon CloudWatch"
+        ],
+        [
+            "Amazon S3"
+        ],
+        [
+            "Eventos"
+        ],
+        [
+            "Dimensão"
+        ],
+        [
+            "Logs do AWS CloudTrail"
+        ]
+    ],
+    "219": [
+        [
+            "AWS Organizations"
+        ],
+        [
+            "AWS Config"
+        ],
+        [
+            "AWS Budgets"
+        ],
+        [
+            "Usar um script stopinator"
+        ],
+        [
+            "Política de controle do serviço (SCP)"
+        ]
+    ],
+    "220": [
+        [
+            "AWS CloudFormation"
+        ],
+        [
+            "Para automatizar as tarefas de configuração e fazer com que sejam repetíveis"
+        ],
+        [
+            "Coordenar a criação de recursos de modelo com outras ações de configuração externa."
+        ],
+        [
+            "O administrador deve ter permissões para acessar o bucket."
+        ],
+        [
+            "Uma AMI está ancorada no nível da Região."
+        ]
+    ],
+    "282": [
+        [
+            "Ela garante que os recursos só possam ser acessados por usuários autorizados"
+        ],
+        [
+            "Integridade"
+        ],
+        [
+            "DDoS"
+        ],
+        [
+            "Prevenção"
+        ],
+        [
+            "Documento da política de uso aceitável"
+        ]
+    ],
+    "308": [
+        [
+            "Periodic backups"
+        ],
+        [
+            "Choose the DB engine"
+        ],
+        [
+            "Deploying the DB instance in multiple Availability Zones (multi-AZ deployment)"
+        ],
+        [
+            "Complex transactions or complex queries"
+        ],
+        [
+            "An Aurora DB cluster consists of one or more DB instances and a cluster volume that manages the data for those DB instances."
+        ]
+    ],
+    "288": [
+        [
+            "Determinar as permissões do usuário"
+        ],
+        [
+            "Leitor de impressão digital"
+        ],
+        [
+            "Ataque ao dicionário"
+        ],
+        [
+            "Formato JSON"
+        ],
+        [
+            "Identidades federadas"
+        ]
+    ],
+    "297": [
+        [
+            "Regulatórios e Contratuais"
+        ],
+        [
+            "Regulamentos governamentais"
+        ],
+        [
+            "O cliente e a AWS compartilham a responsabilidade por atender aos padrões de conformidade."
+        ],
+        [
+            "Criar e manter políticas de segurança"
+        ],
+        [
+            "Publicando informações sobre segurança da AWS em documentos técnicos",
+            "Disponibilizando informações por meio do portal AWS Artifact"
+        ]
+    ],
+    "291": [
+        [
+            "Um serviço da web que usa arquivos de log para gravar eventos.."
+        ],
+        [
+            "Simplifica as auditorias.. e Fornece visibilidade gravando.."
+        ],
+        [
+            "O endereço IP.. e O usuário que executou a solicitação."
+        ],
+        [
+            "Agregar arquivos de log em um único bucket do Amazon Simple Storage Service (Amazon S3).",
+            "Ativar a validação da integridade de arquivo do CloudTrail."
+        ],
+        [
+            "O CloudWatch monitora e reage.."
+        ]
+    ],
+    "292": [
+        [
+            "Uma ferramenta que rastreia mudança nos recursos"
+        ],
+        [
+            "Recuperação de inventário.. e envio de notificações.."
+        ],
+        [
+            "AWS Lambda"
+        ],
+        [
+            "O AWS Config registra e armazena a alteração em um bucket do Amazon Simple Storage Service (Amazon S3).",
+            "O AWS Config usa o Amazon Simple Notification Service (Amazon SNS) para enviar uma notificação."
+        ],
+        [
+            "Quando a configuração do recurso é alterada"
+        ]
+    ],
+    "295": [
+        [
+            "Otimização de custos e tolerância a falhas"
+        ],
+        [
+            "MFA na conta raiz e uso do IAM"
+        ],
+        [
+            "A ação é recomendada."
+        ],
+        [
+            "80%"
+        ],
+        [
+            "Adicionar regras que dão acesso a endereços IP autorizados ao grupo de segurança identificado."
+        ]
+    ],
+    "296": [
+        [
+            "Email"
+        ],
+        [
+            "Acesso completo a todos os serviços e recursos da AWS"
+        ],
+        [
+            "AWS CloudTrail"
+        ],
+        [
+            "Exigir a autenticação com multifator (MFA) para acesso"
+        ],
+        [
+            "Criar ou selecionar um bucket do Amazon Simple Storage Service (Amazon S3) e configurar os relatórios de uso e custo da AWS."
+        ]
+    ],
+    "298": [
+        [
+            "Equipes de conta e consultorias e boletins"
+        ],
+        [],
+        [
+            "Consultorias e boletins da AWS"
+        ],
+        [
+            "Um TAM e suporte 24x7"
+        ],
+        [
+            "Eles orientam os clientes durante a implantação e implementação."
+        ]
+    ],
+    "309": [
+        [
+            "NoSQL database"
+        ],
+        [
+            "By using a collection of multiple replica tables"
+        ],
+        [
+            "Partitioning is the allocation of storage for a table."
+        ],
+        [
+            "Partition keys uniquely identify each item in the table."
+        ],
+        [
+            "Two ways"
+        ]
+    ],
+    "3": [
+        [
+            "Servidor da web"
+        ],
+        [
+            "Várias máquinas.. As máquinas.."
+        ],
+        [
+            "Planejar e analisar"
+        ],
+        [
+            "Oracle e MySQL"
+        ],
+        [
+            "Amazon EC2"
+        ]
+    ],
+    "4": [
+        [
+            "Desenvolvedor de software e gerente de projeto"
+        ],
+        [
+            "Desenvolvedor de software"
+        ],
+        [
+            "Engenheiro de garantia de qualidade"
+        ],
+        [
+            "Proteger os dados e configurar acesso aos dados"
+        ],
+        [
+            "Atribuir tarefas aos membros da equipe e desenvolver um plano de projetos"
+        ]
+    ],
+    "226": [
+        [
+            "O Linux é de código aberto"
+        ],
+        [
+            "Kernel"
+        ],
+        [
+            "Um programa que fornece um serviço e é executado em segundo plano"
+        ],
+        [
+            "man hostname"
+        ],
+        [
+            "Kernel e ferramentas e aplicativos complementares"
+        ]
+    ],
+    "228": [
+        [
+            "Bash"
+        ],
+        [
+            "TAB"
+        ],
+        [
+            "UP arrow"
+        ],
+        [
+            "whoami"
+        ],
+        [
+            "hostname"
+        ]
+    ],
+    "230": [
+        [
+            "Os usuários podem redefinir suas próprias senhas e as senhas são definidas com o comando passwd"
+        ],
+        [
+            "Controlar todos os arquivos de propriedade do usuário e acessar todos os arquivos para os quais o usuário possui permissões"
+        ],
+        [
+            "su"
+        ],
+        [
+            "usermod"
+        ],
+        [
+            "Sempre faça login como um usuário padrão e alternete o usuário para a conta raiz somente quando você precisar elevar as permissões"
+        ]
+    ],
+    "232": [
+        [
+            "Vim"
+        ],
+        [
+            "ESC"
+        ],
+        [
+            ":wq"
+        ],
+        [
+            ":q!"
+        ],
+        [
+            "gedit"
+        ]
+    ],
+    "234": [
+        [
+            "Os nomes dos arquivos diferenciam letras maiúsculas de minúsculas e as extensões são opcionais"
+        ],
+        [
+            "/home"
+        ],
+        [
+            "pwd"
+        ],
+        [
+            "cd"
+        ],
+        [
+            "ls -la /var/log"
+        ]
+    ],
+    "236": [
+        [
+            "File size e File name"
+        ],
+        [
+            "cksum"
+        ],
+        [
+            "diff"
+        ],
+        [
+            "Links simbólicos mostram um link físico, em vez do arquivo real."
+        ],
+        [
+            "-cvf tarball.tar"
+        ]
+    ],
+    "238": [
+        [
+            "chmod"
+        ],
+        [
+            "chmod 757 filename"
+        ],
+        [
+            "ls -l"
+        ],
+        [
+            "chown"
+        ],
+        [
+            "Primeiro, dê ao menor número de usuários o acesso mínimo aos arquivos; e conceda mais permissões somente quando o usuário apresentar uma necessidade."
+        ]
+    ],
+    "240": [
+        [
+            "ps -ef"
+        ],
+        [
+            "ps e pidof"
+        ],
+        [
+            "crontab e at"
+        ],
+        [
+            "-9 SIGKILL"
+        ],
+        [
+            "Pronto"
+        ]
+    ],
+    "242": [
+        [
+            "Amazon CloudWatch"
+        ],
+        [
+            "systemctl list-units -type=service --state=active"
+        ],
+        [
+            "vmstat"
+        ],
+        [
+            "df -h"
+        ],
+        [
+            "free"
+        ]
+    ],
+    "244": [
+        [
+            "Código pré-compilado",
+            "Instruções de instalação",
+            "Documentação"
+        ],
+        [
+            "yum update <package name>"
+        ],
+        [
+            "Use yum list installed"
+        ],
+        [
+            "Servidor interno",
+            "Site do fornecedor on-line",
+            "Unidade de disco rígido local"
+        ],
+        [
+            "wget"
+        ]
+    ],
+    "246": [
+        [
+            "/var/log"
+        ],
+        [
+            "Emergency (Emergência)"
+        ],
+        [
+            "Os sistemas de arquivos em um disco podem ficar sem espaço.",
+            "As informações pessoais de um usuário final podem ter sido armazenadas no arquivo de log."
+        ],
+        [
+            "head e tail"
+        ],
+        [
+            "lastlog"
+        ]
+    ],
+    "248": [
+        [
+            "? E *"
+        ],
+        [
+            "cd .. ; rm *.csv ; ls *.csv"
+        ],
+        [
+            "grep fail /var/log/secure.log"
+        ],
+        [
+            "Um editor de texto não interativo"
+        ],
+        [
+            "> e >>"
+        ]
+    ],
+    "250": [
+        [
+            "Uma variável é um valor que é substituído pelo script ou comando."
+        ],
+        [
+            "HOME"
+        ],
+        [
+            "echo"
+        ],
+        [
+            "Arquivo .bashrc"
+        ],
+        [
+            "$PATH"
+        ]
+    ],
+    "252": [
+        [
+            "Para automatizar e para garantir que uma tarefa seja.."
+        ],
+        [
+            "#!/bin/bash"
+        ],
+        [
+            "$2 e $4 são os argumentos."
+        ],
+        [
+            "exit (sair)"
+        ],
+        [
+            "if – eles (se, então)"
+        ]
+    ],
+    "254": [
+        [
+            "Uma rede de computadores é uma coleção de dispositivos de computação logicamente conectados para comunicar e compartilhar recursos."
+        ],
+        [
+            "O servidor responde a uma solicitação do cliente"
+        ],
+        [
+            "Camada 2"
+        ],
+        [
+            "É um identificador físico exclusivo atribuído pelo fabricante. A NIC o utiliza para identificar dados sobre o remetente e o receptor."
+        ],
+        [
+            "Switch"
+        ]
+    ],
+    "255": [
+        [
+            "Uma LAN conecta nós e hosts em uma área geograficamente limitada. Uma WAN conecta várias LANs para criar uma rede mais expansiva que possa cobrir grandes áreas geográficas, como cidades."
+        ],
+        [
+            "Transit gateway da AWS"
+        ],
+        [
+            "Topologia de barramento estrela"
+        ],
+        [
+            "Ele envia uma mensagem para o destino sem garantir que o destino está disponível."
+        ],
+        [
+            "Cria uma sessão entre o remetente e o receptor."
+        ]
+    ],
+    "256": [
+        [
+            "Uma impressora"
+        ],
+        [
+            "10.255.255.255"
+        ],
+        [
+            "Endereço IP privado"
+        ],
+        [
+            "32 bits"
+        ],
+        [
+            "Quando um número de porta é combinado com um endereço IP, ele identifica exclusivamente uma origem ou um destino para comunicação de dados."
+        ]
+    ],
+    "257": [
+        [
+            "Permite que você crie uma rede privada na Nuvem AWS."
+        ],
+        [
+            "Intervalo de endereços IP"
+        ],
+        [
+            "Um banco de dados"
+        ],
+        [
+            "Ela determina para onde o tráfego de rede é direcionado dentro da nuvem privada virtual (VPC)."
+        ],
+        [
+            "Ele atua como um firewall stateful que controla o tráfego de rede.."
+        ]
+    ],
+    "258": [
+        [
+            "Para dividir uma rede em sub-redes menores e mais eficientes",
+            "Para reduzir o tráfego de rede"
+        ],
+        [
+            "Classe A"
+        ],
+        [
+            "xxx.xxx.xxx.xxx/31"
+        ],
+        [
+            "256"
+        ],
+        [
+            "Define qual seção de um endereço IP identifica a rede e qual.."
+        ]
+    ],
+    "260": [
+        [
+            "Protocolo de correios (POP)"
+        ],
+        [
+            "MQTT e HTTPS"
+        ],
+        [
+            "Fazer com que dispositivos que possam se conectar à internet relatem dados e sejam monitorados ou controlados remotamente."
+        ],
+        [
+            "BYOD e MDM"
+        ],
+        [
+            "Amazon WorkSpaces"
+        ]
+    ],
+    "259": [
+        [
+            "SSL e TLS"
+        ],
+        [
+            "O número de porta padrão para HTTP é 80 e HTTP é um protocolo cliente-servidor"
+        ],
+        [
+            "SYN, ACK e SYN/ACK"
+        ],
+        [
+            "tcpdump"
+        ],
+        [
+            "Protocolo de desktop remoto (RDP)"
+        ]
+    ],
+    "285": [
+        [
+            "Minimizar os riscos de segurança reduzindo o conjunto de vulnerabilidades que são expostas por um sistema"
+        ],
+        [
+            "Um ponto de partida para determinar o que proteger e como proteger um sistema"
+        ],
+        [
+            "Aplicar patches regularmente"
+        ],
+        [
+            "Restringe acesso físico.."
+        ],
+        [
+            "AWS Trusted Advisor"
+        ]
+    ],
+    "286": [
+        [
+            "Criptografia"
+        ],
+        [
+            "A chave é um segredo compartilhado entre o remetente e o receptor."
+        ],
+        [
+            "Confidencialidade"
+        ],
+        [
+            "SSL e TLS"
+        ],
+        [
+            "O destinatário da mensagem"
+        ]
+    ],
+    "287": [
+        [
+            "As autoridades de certificação"
+        ],
+        [
+            "Uma credencial eletrônica usada para representar a identidade de um indivíduo, computador ou outra entidade."
+        ],
+        [
+            "Chave pública e chave privada"
+        ],
+        [
+            "O certificado da CA expirou."
+        ],
+        [
+            "Pela troca de chaves públicas que validam as identidades das partes"
+        ]
+    ],
+    "289": [
+        [
+            "Administrar usuários e suas permissões de acesso"
+        ],
+        [
+            "Autenticação e autorização"
+        ],
+        [
+            "MFA"
+        ],
+        [
+            "Em um documento de política anexada ao usuário"
+        ],
+        [
+            "Implementar política de senhas"
+        ]
+    ],
+    "290": [
+        [
+            "Dispositivo removível e site não confiável"
+        ],
+        [
+            "Fazer uma varredura regular no sistema"
+        ],
+        [
+            "Atualizar os arquivos de definição de vírus com frequência."
+        ],
+        [
+            "Em um servidor e em uma rede"
+        ],
+        [
+            "Registros de fluxo da nuvem privada virtual (VPC)"
+        ]
+    ],
+    "293": [
+        [
+            "BCP e DRP"
+        ],
+        [
+            "Definir como administrar o negócio com capacidade reduzida"
+        ],
+        [
+            "Definir como restaurar.."
+        ],
+        [
+            "Foca na recuperação apenas de dados.",
+            "Representa a quantidade de perda de dados tolerada por uma empresa."
+        ],
+        [
+            "Chama piloto"
+        ]
+    ],
+    "294": [
+        [
+            "Análise"
+        ],
+        [
+            "Estabelecer um cronograma, começando com as operações de referência e terminando com a ocorrência do problema."
+        ],
+        [
+            "Fornece os dados usados para a identificação do problema."
+        ],
+        [
+            "Como a violação poderia ter sido evitada? E Como a violação aconteceu?"
+        ],
+        [
+            "Quem realiza as tarefas de monitoramento? E Quais recursos são monitorados?"
+        ]
+    ],
+    "283": [
+        [
+            "Identificar.. Avaliar.. Implementar.."
+        ],
+        [
+            "AWS Systems manager"
+        ],
+        [
+            "O ativo valioso é protegido por muitas camadas de diferentes tipos de medidas de segurança."
+        ],
+        [
+            "Reforço de sistemas, reforço da rede e controles de segurança de dados."
+        ],
+        [
+            "Conceder aos usuários acesso somente aos recursos que eles têm autorização para acessar."
+        ]
+    ],
+    "284": [
+        [
+            "Verificação de porta"
+        ],
+        [
+            "ICMP"
+        ],
+        [
+            "Ele filtra pacotes que entram e saem de uma rede"
+        ],
+        [
+            "Permite que os administradores apliquem controles de segurança diferentes a diferentes partes de uma rede.",
+            "Ela melhora o desempenho do tráfego de rede."
+        ],
+        [
+            "Um firewall que protege instâncias EC2"
+        ]
+    ],
+    "117": [
+        [
+            "Um arquivo de texto com instruções para o computador escritas em uma linguagem de programação."
+        ],
+        [
+            "Todo o programa é primeiro traduzido em código de máquina antes de ser executado."
+        ],
+        [
+            "Escreva um pouco > Teste > Escreva um pouco mais > Teste."
+        ],
+        [
+            "Controle de versão"
+        ],
+        [
+            "Git"
+        ]
+    ],
+    "119": [
+        [
+            "Python e JavaScript"
+        ],
+        [
+            "IDEs destacam sintaxe incorreta e IDEs sugerem soluções para problemas."
+        ],
+        [
+            "daysInWeek = 7"
+        ],
+        [
+            "for (para)"
+        ],
+        [
+            "if e elif"
+        ]
+    ],
+    "121": [
+        [
+            "nomedocliente1 e sobrenomedocliente"
+        ],
+        [
+            "Inteiros e Strings"
+        ],
+        [
+            "msg = “Sou uma mensagem” e msg = “Sou uma” + “mensagem”"
+        ],
+        [
+            "15"
+        ],
+        [
+            "msg2 = msg + 12"
+        ]
+    ],
+    "123": [
+        [
+            "Se o cliente.."
+        ],
+        [
+            "Adulto"
+        ],
+        [
+            "Pode ser executado indefinidamente e É executado enquanto uma condição for verdadeira."
+        ],
+        [
+            "Podem conter vários tipos de dados [como string, int ou float]."
+        ],
+        [
+            "if/elif/else e if/else (se, então)"
+        ]
+    ],
+    "125": [
+        [
+            "Escrevendo funções personalizadas"
+        ],
+        [
+            "Uma função que retorna algo"
+        ],
+        [
+            "def calculateVAT(preço, país)"
+        ],
+        [
+            "input()"
+        ],
+        [
+            "Capacidade de reutilização"
+        ]
+    ],
+    "127": [
+        [
+            "Conjunto de funções agrupadas"
+        ],
+        [
+            "loads"
+        ],
+        [
+            "Para transformar dados que serão enviados ou recebidos em uma rede"
+        ],
+        [
+            "Um gerenciador de pacotes Python"
+        ],
+        [
+            "Para detectar e gerenciar erros para que um programa não termine inesperadamente"
+        ]
+    ],
+    "223": [
+        [
+            "subprocess.run()"
+        ],
+        [
+            "Garantir a estabilidade do sistema."
+        ],
+        [
+            "apt-get upgrade"
+        ],
+        [
+            "Instalação de novo hardware ou software"
+        ],
+        [
+            "Adicionando um usuário."
+        ]
+    ],
+    "131": [
+        [
+            "Use uma ferramenta de depuração para análise dinâmica."
+        ],
+        [
+            "Bugs podem ser detectados no início do processo de desenvolvimento.",
+            "É possível identificar a localização exata dos problemas de código."
+        ],
+        [
+            "Identificar os erros sob certas condições em tempo de execução"
+        ],
+        [
+            "Testes unitários"
+        ],
+        [
+            "Testes de integração"
+        ]
+    ],
+    "137": [
+        [
+            "Conjunto de práticas e cultura que ajuda a automatizar e monitorar o desenvolvimento de software"
+        ],
+        [
+            "Cultura Adhocrática"
+        ],
+        [
+            "Versão e Implantação"
+        ],
+        [
+            "Compilação e teste"
+        ],
+        [
+            "Automação da compilação"
+        ]
+    ],
+    "138": [
+        [
+            "As equipes trabalham juntas da mesma maneira."
+        ],
+        [
+            "pylint"
+        ],
+        [
+            "Gerenciamento de configuração significa usar ferramentas para monitorar alterações de código e revertê-las, se necessário."
+        ],
+        [
+            "Enviar as alterações ao repositório."
+        ],
+        [
+            "Software de controle de versão"
+        ]
+    ],
+    "299": [
+        [
+            "Uma coleção de dados que são organizados em tabelas"
+        ],
+        [
+            "Colunas e Tabelas"
+        ],
+        [
+            "Os bancos de dados NoSQL têm um esquema flexível",
+            "Bancos de dados NoSQL usam modelos de dados que não são baseados em tabelas relacionais"
+        ],
+        [
+            "Anomalia de estrutura"
+        ],
+        [
+            "Esses bancos de dados reduzem o custo de instalação e manutenção dos servidores."
+        ]
+    ],
+    "300": [
+        [
+            "Atomicidade"
+        ],
+        [
+            "Criar aplicativos diferentes que podem receber dados"
+        ],
+        [
+            "Uma transação é a reprodução de uma ou mais alterações realizadas em um banco de dados."
+        ],
+        [
+            "A capacidade de processar concomitantemente várias transações de forma que uma transação não afete outras transações."
+        ],
+        [
+            "Uma transação em um banco de dados tem êxito se a transação for confirmada."
+        ]
+    ],
+    "301": [
+        [
+            "São usadas para criar e modificar a estrutura de um banco de dados."
+        ],
+        [
+            "Recuperar dados de uma tabela"
+        ],
+        [
+            "É uma referência a uma coluna em outra tabela."
+        ],
+        [
+            "As chave-valores estrangeiras devem corresponder a uma chave-valor primária existente."
+        ],
+        [
+            "São usadas para visualizar, adicionar, alterar ou excluir dados em uma tabela."
+        ]
+    ],
+    "302": [
+        [
+            "Para importar ou exportar dados dos bancos de dados e planilhas"
+        ],
+        [
+            "É usado para representar um valor ausente."
+        ],
+        [
+            "Confirme se a estrutura dos dados no arquivo corresponde ao número de colunas da tabela e ao tipo de dados em cada coluna."
+        ],
+        [
+            "Combina strings de várias colunas e as reúne em uma linha."
+        ],
+        [
+            "Para adicionar novos dados a um banco de dados e Para adicionar um novo registro a uma tabela"
+        ]
+    ],
+    "303": [
+        [
+            "A cláusula WHERE solicita apenas linhas específicas de uma tabela."
+        ],
+        [
+            "FROM"
+        ],
+        [
+            "Condition"
+        ],
+        [
+            "Seleciona todas as colunas"
+        ],
+        [
+            "-- comment"
+        ]
+    ],
+    "304": [
+        [
+            "BETWEEN"
+        ],
+        [
+            "LIKE"
+        ],
+        [
+            "Aliases criam nomes temporários para colunas."
+        ],
+        [
+            "LIKE"
+        ],
+        [
+            "NULL value"
+        ]
+    ],
+    "305": [
+        [
+            "COUNT()"
+        ],
+        [
+            "SELECT DISTINCT district, countrycode FROM city;"
+        ],
+        [
+            "LTRIM()"
+        ],
+        [
+            "SUM"
+        ],
+        [
+            "DISTINCT"
+        ]
+    ],
+    "306": [
+        [
+            "GROUP BY"
+        ],
+        [
+            "HAVING"
+        ],
+        [
+            "ORDER BY column_name DESC"
+        ],
+        [
+            "O resultado da consulta será organizado pela terceira coluna na cláusula SELECT da declaração de SQL."
+        ],
+        [
+            "HAVING SUM(sales) > 5000"
+        ]
+    ],
+    "307": [
+        [
+            "UNION"
+        ],
+        [
+            "table_name.column_name"
+        ],
+        [
+            "INNER JOIN"
+        ],
+        [
+            "LEFT JOIN"
+        ],
+        [
+            "AS"
+        ]
+    ],
+    "210": [
+        [
+            "Implantação"
+        ],
+        [
+            "IAM"
+        ],
+        [
+            "Política baseada em recursos"
+        ],
+        [
+            "Use funções do IAM para fornecer acesso entre contas.",
+            "Delegar funções administrativas de acordo com o princípio do menor privilégio."
+        ],
+        [
+            "stop-instances"
+        ]
+    ],
+    "211": [
+        [
+            "Documento de automação"
+        ],
+        [
+            "Armazenamento de parâmetro"
+        ],
+        [
+            "Gerenciador de sessão"
+        ],
+        [
+            "JSON ou YAML"
+        ],
+        [
+            "AWS OpsWorks"
+        ]
+    ],
+    "195": [
+        [
+            "Governança de dados, requisitos legais"
+        ],
+        [
+            "CloudFront, Route 53 e IAM"
+        ],
+        [
+            "Amazon CloudFront"
+        ],
+        [
+            "Amazon S3"
+        ],
+        [
+            "Tabela"
+        ],
+        [
+            "--dry -run"
+        ],
+        [
+            "SNS e Lambda"
+        ],
+        [
+            "169.254.169.254"
+        ],
+        [
+            "Inicialização"
+        ],
+        [
+            "Sob demanda"
+        ],
+        [],
+        [
+            "WebSockets"
+        ],
+        [
+            "Failover ativo-ativo"
+        ],
+        [
+            "Encaminha o tráfego para o site com base no nome de domínio inserido.",
+            "Registra nomes de domínio.",
+            "Conclui as verificações de integridade do recurso para garantir que ele possa ser acessado."
+        ],
+        [
+            "ElastiCache e DynamoDB"
+        ],
+        [
+            "Sem servidor"
+        ],
+        [],
+        [
+            "Amazon Kinesis"
+        ],
+        [],
+        [
+            "Oferecer suporte a modelos de armazenamento de documentos e chave-valor",
+            "Utilizar coleções não ordenadas de pares nome-valor",
+            "Fornecer latência de um dígito"
+        ],
+        [
+            "Tipo de mapa"
+        ],
+        [
+            "Amazon DynamoDB"
+        ],
+        [],
+        [
+            "Peering de VPC"
+        ],
+        [
+            "Confirmar se as listas de controle de acesso à rede (ACLs de rede) fornecem acesso aos protocolos IP e às portas de serviço.",
+            "Validar as permissões do security group para as portas de serviço e os endereços IP de origem/destino."
+        ],
+        [],
+        [
+            "Amazon S3 STANDARD Infrequent Access (IA)"
+        ],
+        [
+            "O versionamento foi ativado."
+        ],
+        [
+            "Reconectar o gateway."
+        ],
+        [
+            "Comprimento máximo do valor da tag de 256 caracteres Unicode.",
+            "As chaves e os valores diferenciam maiúsculas de minúsculas em uma tag.",
+            "Comprimento da chave de tag entre 1 e 128 caracteres Unicode."
+        ],
+        [
+            ".gz"
+        ],
+        [
+            "Selecionar ou criar uma função do IAM válida."
+        ],
+        [
+            "DiskWriteBytes"
+        ],
+        [],
+        [
+            "Dados armazenados pelo cliente",
+            "Logins de rede",
+            "Acesso a recursos"
+        ],
+        [],
+        [
+            "aws:PrincipalTag/key-name"
+        ],
+        [],
+        [
+            "Limitar chamadas da interface de programação de aplicativos (API) do Amazon Elastic Compute Cloud (Amazon EC2) somente para ambientes de desenvolvimento."
+        ],
+        [],
+        [],
+        [],
+        [
+            "Os recursos que usarão a função; uma dependência de política também deve ser adicionada."
+        ],
+        [
+            "Referências de pilha cruzadas não podem ser criadas entre regiões.",
+            "Uma pilha não pode ser excluída se fizer referência a outra pilha em uma de suas saídas.",
+            "Os nomes devem ser exclusivos dentro de uma região."
+        ],
+        [
+            "Metadados"
+        ],
+        [
+            "Organizar recursos na mesma pilha com base em sua propriedade e ciclos de vida.",
+            "Reutilizar modelos para criar pilhas para diferentes ambientes.",
+            "Planejar e organizar pilhas antes de criá-las."
+        ],
+        [
+            "Solicitar um aumento de limite e Excluir instâncias excedentes."
+        ],
+        [
+            "A pilha pode estar em um estado irrecuperável."
+        ],
+        []
+    ]
+}
