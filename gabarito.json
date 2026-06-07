@@ -711,19 +711,19 @@
     ],
     "217": [
         [
-            "Armazenamento de instâncias"
+            "Armazenamento de instância do amazon ec2"
         ],
         [
             "Amazon S3 Intelligent-Tiering"
         ],
         [
-            "IOPS provisionados (SSD)"
+            "SSD de IOPS provisionadas (io2)"
         ],
         [
             "Amazon EBS"
         ],
         [
-            "5 a 12 horas"
+            "3 a 5 horas"
         ]
     ],
     "218": [

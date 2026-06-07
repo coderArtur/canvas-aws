@@ -179,7 +179,7 @@ def resolver_kc(nova_aba, nome_kc, gabarito):
     # --- MUDANÇA AQUI: Usar dispatch_event APENAS para o popup "Não" ---
     # O usuário confirmou que dispatch_event funciona para o popup
     try:
-        botao_nao = frame.locator('button[aria-label="Não"]')
+        botao_nao = frame.locator('button[aria-label="Não"], button[aria-label="No"]')
         # Espera no máximo 3 segundos para ver se o popup "Não" aparece
         botao_nao.wait_for(state="attached", timeout=3000)
         botao_nao.first.dispatch_event('click')
@@ -188,8 +188,8 @@ def resolver_kc(nova_aba, nome_kc, gabarito):
         pass  # Se não aparecer o popup, segue normalmente
     # -------------------------------------------------------------------
     
-    # Iniciar (Usando o .click normal que o usuário disse que funciona)
-    frame.locator('div[data-acc-text="Iniciar"]').click()
+    # Iniciar ou Comenzar (Usando o .click normal que o usuário disse que funciona)
+    frame.locator('div[data-acc-text="Iniciar"], div[data-acc-text="Comenzar"]').click()
     time.sleep(2)
     
     # Extrai o número do nome (Ex: "2-CF- KC..." vira apenas "2")
@@ -220,7 +220,7 @@ def resolver_kc(nova_aba, nome_kc, gabarito):
             for opcao in opcoes:
                 texto = opcao.get_attribute('data-acc-text')
                 # Ignora os textos dos botões principais
-                if texto and texto not in ["Iniciar", "ENVIAR", "Continuar", "Resultados da verificação de conhecimento"]:
+                if texto and texto not in ["Iniciar", "Comenzar", "ENVIAR", "Continuar", "Resultados da verificação de conhecimento"]:
                     try:
                         # Tenta clicar. Se for a pergunta em si, o clique não faz nada, se for opção ele marca
                         opcao.click(timeout=500)

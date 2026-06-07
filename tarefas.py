@@ -38,10 +38,10 @@ def obter_tarefas_pendentes(page):
             
             if "Lab" in nome_tarefa:
                 tipo = "Lab"
-            elif "KC" in nome_tarefa or re.search(r'\d+', nome_tarefa):
+            elif "KC" in nome_tarefa or re.match(r'^\d+', nome_tarefa):
                 tipo = "KC"
             else:
-                # Se não tem "Lab", nem "KC" e nem sequer um número de identificação, ignore!
+                # Se não tem "Lab", nem "KC" e nem começa com um número de identificação, ignore!
                 print(f"Ignorando tarefa desconhecida: {nome_tarefa}")
                 continue
                 
