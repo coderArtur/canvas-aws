@@ -108,6 +108,7 @@ def resolver_lab(nova_aba):
             print("  Aviso: Tempo limite esgotado aguardando o relatório, prosseguindo com o encerramento...")
         
         print("  Encerrando Lab...")
+        time.sleep(3)
         nova_aba.locator('div[role="button"]:has-text("End Lab")').click(force=True)
         time.sleep(2)
         

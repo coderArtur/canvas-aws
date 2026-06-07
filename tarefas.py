@@ -2,7 +2,7 @@ from config import URL_ATIVIDADES, BASE_URL
 import time
 import re
 
-def obter_tarefas_pendentes(page):
+def obter_tarefas_pendentes(page, ignorar_notas=False):
     tarefas = []
     page.goto(URL_ATIVIDADES)
     try:
@@ -32,8 +32,10 @@ def obter_tarefas_pendentes(page):
     
     for linha in linhas:
         nota_span = linha.locator('//td[@class="assignment_score"]//span[@class="grade"]')
-        if nota_span.count() > 0 and "-" in nota_span.inner_text():
+        if nota_span.count() > 0 and (ignorar_notas or "-" in nota_span.inner_text()):
             link = linha.locator('th a')
+            if link.count() == 0:
+                continue
             nome_tarefa = link.inner_text()
             href = link.get_attribute("href")
             
@@ -49,7 +51,7 @@ def obter_tarefas_pendentes(page):
             
     return tarefas
 
-def abrir_tarefa(page, url_tarefa):
+def abrir_tarefa(page, url_tarefa, forcar=False):
     page.goto(url_tarefa)
     
     try:
@@ -60,7 +62,7 @@ def abrir_tarefa(page, url_tarefa):
     time.sleep(3)
     
     status_locator = page.locator('div[data-testid="submission-workflow-tracker-subtitle"]')
-    if status_locator.count() > 0:
+    if status_locator.count() > 0 and not forcar:
         texto_status = status_locator.first.inner_text().strip()
         if texto_status == "PRÓXIMO: Revisão de feedback":
             print("  -> Tarefa já enviada e aguardando revisão. Pulando...")
