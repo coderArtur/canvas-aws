@@ -38,7 +38,7 @@ O ambiente virtual isola as instalações desse projeto para não bagunçar o se
 
 **No Windows:**
 ```bash
-python -m venv .venv
+py -m venv .venv
 .venv\Scripts\activate
 ```
 
