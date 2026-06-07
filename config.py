@@ -4,7 +4,7 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-OCULTAR_TELA = True
+OCULTAR_TELA = False
 EMAIL = os.getenv("EMAIL")
 SENHA = os.getenv("SENHA")
 URL_LOGIN = "https://awsrestart.instructure.com/login/canvas"
