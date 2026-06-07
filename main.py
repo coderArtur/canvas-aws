@@ -16,7 +16,7 @@ def main():
     print("===================================")
     print(" 1 - Apenas KCs")
     print(" 2 - Apenas Labs")
-    print(" 3 - Todos (KCs e Labs)")
+    print(" 3 - KCs e Labs (Recomendado)")
     print("===================================")
     escolha = input("Digite o número (pressione ENTER para 3): ").strip()
     

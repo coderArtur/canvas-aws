@@ -97,7 +97,7 @@ def resolver_kc_v2(nova_aba, nome_kc, gabarito):
                 if score_atual > maior_score:
                     maior_score = score_atual
                     
-            if maior_score > 0.80:
+            if maior_score > 0.75:
                 try:
                     opcao.click(timeout=3000)
                     time.sleep(0.5)
@@ -222,18 +222,21 @@ def resolver_kc(nova_aba, nome_kc, gabarito):
             cliques = 0
             for opcao in opcoes:
                 texto = opcao.get_attribute('data-acc-text')
-                # Ignora os textos dos botões principais
-                if texto and texto not in ["Iniciar", "Comenzar", "ENVIAR", "Continuar", "Resultados da verificação de conhecimento"]:
-                    try:
-                        # Tenta clicar. Se for a pergunta em si, o clique não faz nada, se for opção ele marca
-                        opcao.click(timeout=500)
-                        cliques += 1
-                        time.sleep(0.3)
-                        # Parar após 3 chutes
-                        if cliques >= 3:
-                            break
-                    except:
-                        pass
+                # Ignora os textos dos botões principais e itens de acessibilidade
+                if texto:
+                    texto_lower = texto.lower()
+                    ignorar = ["iniciar", "comenzar", "enviar", "continuar", "resultados da verificação de conhecimento"]
+                    if texto_lower not in ignorar and "navega" not in texto_lower and "teclado" not in texto_lower:
+                        try:
+                            # Tenta clicar. Se for a pergunta em si, o clique não faz nada, se for opção ele marca
+                            opcao.click(timeout=500)
+                            cliques += 1
+                            time.sleep(0.3)
+                            # Parar após 3 chutes
+                            if cliques >= 3:
+                                break
+                        except:
+                            pass
         else:
             # Clica em todas as opções corretas DAQUELA tela usando comparação inteligente
             opcoes_na_tela = frame.locator('div[data-acc-text]').all()
@@ -246,8 +249,13 @@ def resolver_kc(nova_aba, nome_kc, gabarito):
                 
                 for opcao in opcoes_na_tela:
                     texto_opcao = opcao.get_attribute('data-acc-text')
-                    # Ignorar se estiver vazio ou se for um botão de navegação
-                    if not texto_opcao or texto_opcao in ["Iniciar", "ENVIAR", "Continuar", "Resultados da verificação de conhecimento"]:
+                    if not texto_opcao:
+                        continue
+                        
+                    texto_lower = texto_opcao.lower()
+                    ignorar = ["iniciar", "comenzar", "enviar", "continuar", "resultados da verificação de conhecimento"]
+                    # Ignorar botões de navegação e acessibilidade
+                    if texto_lower in ignorar or "navega" in texto_lower or "teclado" in texto_lower:
                         continue
                         
                     texto_opcao_norm = normalizar_texto(texto_opcao)
@@ -271,7 +279,7 @@ def resolver_kc(nova_aba, nome_kc, gabarito):
                         melhor_opcao = opcao
                 
                 # Clica apenas na melhor opção encontrada para esta resposta do gabarito (se for >= 80% similar)
-                if melhor_opcao and maior_score > 0.80:
+                if melhor_opcao and maior_score > 0.75:
                     try:
                         melhor_opcao.click(timeout=3000)
                         time.sleep(1) # Dá mais tempo para o canvas processar o clique antes de ir pra próxima
@@ -279,12 +287,21 @@ def resolver_kc(nova_aba, nome_kc, gabarito):
                         pass
             
         # Clicar no botão ENVIAR da questão atual
-        # Pode ter o texto "ENVIAR" ou apenas um ícone (mas sempre tem id="submit")
-        frame.locator('button#submit').click()
-        time.sleep(1)
+        try:
+            frame.locator('button#submit').click(timeout=3000)
+            time.sleep(1)
+        except:
+            pass
         
-        # Clicar em Continuar para ir para a próxima questão (Este botão também é um popup do Storyline)
-        frame.locator('button:has(span:has-text("Continuar"))').dispatch_event('click')
+        # Clicar em Continuar para ir para a próxima questão
+        try:
+            # Em vez de dispatch_event sem timeout que trava o bot, usamos com limite de 5s
+            frame.locator('button:has(span:has-text("Continuar"))').dispatch_event('click', timeout=5000)
+        except:
+            try:
+                frame.locator('div[data-acc-text="Continuar"]').first.click(timeout=3000)
+            except:
+                pass
         time.sleep(1)
         
     # Ao terminar todas as questões e sair do loop, aguarda a tela de finalização

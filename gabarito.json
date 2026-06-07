@@ -167,7 +167,7 @@
             "Amazon Neptune"
         ],
         [
-            "Fornecer acesso através de grupos de segurança relevantes.",
+            "Especificar uma sub-rede pública para criação",
             "Especificar um endereço IP elástico para associação.",
             "Atualizar a tabela de rotas."
         ],
@@ -216,9 +216,9 @@
             "Existirem centenas de milhares de clientes agregados na nuvem"
         ],
         [
-            "SDK",
-            "CLI",
-            "Console"
+            "Kits de Desenvolvimento de Software (SDKs)",
+            "AWS Command Line Interface (AWS CLI)",
+            "AWS Management Console"
         ]
     ],
     "198": [
@@ -270,8 +270,7 @@
             "Regiões AWS"
         ],
         [
-            "Tolerante a falhas",
-            "Elásticas e escaláveis"
+            "Tolerante a falhas, elásticas e escaláveis"
         ],
         [
             "Verdadeiro"
@@ -280,7 +279,8 @@
             "Um data center pode ser usado para mais de uma Zona de disponibilidade"
         ],
         [
-            "Cada região está localizada em uma área geográfica separada"
+            "Cada região está localizada em uma área geográfica separada",
+            "Cada região é um local físico que tem várias zonas de disponibilidade."
         ],
         [
             "Múltiplas"
@@ -306,14 +306,14 @@
             "Mensal"
         ],
         [
-            "Executa quatro instâncias reservadas.."
+            "Execute quatro instancias Reservadas constantemente e adicione mais oito instancias On-Demand no ultimo dia de cada mes."
         ],
         [
-            "AMI",
-            "Tipo de instância"
+            "Imagem de maquina da Amazon (AMI)",
+            "Tipo de instancia do Amazon EC2"
         ],
         [
-            "As instâncias do Amazon EC2.."
+            "As instancias do Amazon EC2 podem ser executadas sob demanda quando necessário."
         ]
     ],
     "201": [
@@ -321,7 +321,8 @@
             "Segurança da nuvem"
         ],
         [
-            "Em que país o conteúdo é armazenado e quais serviços da aws são usados"
+            "Em que país o conteúdo é armazenado",
+            "quais serviços da aws são usados"
         ],
         [
             "Infraestrutura global segura",
@@ -337,7 +338,8 @@
             "AWS Security Token Service (STS)"
         ],
         [
-            "Alterne credenciais regularmente e monitore a atividade em sua conta da AWS."
+            "Alterne credenciais regularmente",
+            "monitore a atividade em sua conta da AWS."
         ],
         [
             "Falso"
@@ -366,7 +368,8 @@
             "Leis, regulamentos e privacidade"
         ],
         [
-            "Acesso ao AWS Management Console e Acesso programático"
+            "Acesso ao AWS Management Console",
+            "Acesso programático"
         ],
         []
     ],
@@ -425,7 +428,9 @@
             "Em várias zonas de disponibilidade na mesma região"
         ],
         [
-            "Infrequent Acess, Standard Acecss e Glacier"
+            "S3 - Infrequent Access (Acesso com pouca frequencia)",
+            "S3 - Standard Access (Acesso Standard)",
+            "Amazon Simple Storage Service Glacier"
         ],
         [
             "Em todo o mundo e em todas as contas da aws"
@@ -434,7 +439,8 @@
             "Armazenar conteúdo estático.."
         ],
         [
-            "Ficarem rapidamente acessíveis, exigindo persistência de longo prazo"
+            "Ficarem rapidamente acessíveis, exigindo persistência de longo prazo",
+            "requerem uma solução de criptografia"
         ],
         [
             "Falso"
@@ -478,7 +484,10 @@
     ],
     "205": [
         [
-            "Basic, Desenvolvedor, Business e Enterprise"
+            "Basic",
+            "Desenvolvedor",
+            "Business",
+            "Enterprise"
         ],
         [
             "Acesso em horário comercial ao Cloud Support Associates via e-mail",
@@ -488,13 +497,18 @@
             "Acesso a uma análise do Well-Architected entregue pelos arquitetos de soluções da AWS"
         ],
         [
-            "Suporte Business e Suporte Enterprise"
+            "Suporte Business",
+            "Suporte Enterprise"
         ],
         [
             "Trusted Advisor"
         ],
         [
-            "Baixa, normal, alta, urgente e crítico."
+            "Baixa",
+            "normal",
+            "alta",
+            "urgente",
+            "crítico."
         ],
         [
             "1 hora ou menos"
@@ -523,7 +537,8 @@
             "Aproveite o scaling para se recuperar de instâncias de falha"
         ],
         [
-            "Democratizar tecnologias avançadas e Usar arquiteturas sem servidor"
+            "Democratizar tecnologias avançadas",
+            "Usar arquiteturas sem servidor"
         ],
         [
             "AWS Marketplace"
@@ -543,7 +558,8 @@
     ],
     "207": [
         [
-            "Scaling e Elastic Load Balacing"
+            "Scaling",
+            "Elastic Load Balancing"
         ],
         [
             "Amazon SNS"
@@ -555,19 +571,26 @@
             "Um listener"
         ],
         [
-            "AMI, tipo de instância e Nome de Configuração de execução"
+            "imagem de máquina da Amazon (AMI)",
+            "tipo de instância",
+            "Nome de Configuração de execução"
         ],
         [
             "15 meses"
         ],
         [
-            "Monitoramento básico (gratuito) e detalhado (custo adicional)"
+            "Monitoramento detalhado, que tem um custo adicional",
+            "Monitoramento básico, que é gratuito"
         ],
         [
-            "Uma solicitação de página, Uma tentativa de conexão e Um ping"
+            "Uma solicitação de página",
+            "Uma tentativa de conexão",
+            "Um ping"
         ],
         [
-            "Balanceador de carga clássica, network load balancer e application load balancer"
+            "Balanceador de carga clássica",
+            "network load balancer",
+            "application load balancer"
         ]
     ],
     "208": [
@@ -722,7 +745,7 @@
             "SSD de IOPS provisionadas (io2)"
         ],
         [
-            "Amazon EBS"
+            "Amazon Elastic Block Store (Amazon EBS)"
         ],
         [
             "3 a 5 horas"
@@ -1990,7 +2013,9 @@
         [
             "Amazon DynamoDB"
         ],
-        [],
+        [
+            "Duas"
+        ],
         [
             "Peering de VPC"
         ],
