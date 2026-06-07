@@ -1,11 +1,9 @@
-# Ambientes virtuais
 .venv/
 venv/
 env/
 __pycache__/
 *.pyc
 
-# Arquivos de debug e logs ignorados a pedido do usuário
 1- login e lista de tarefas.txt
 2- labs.txt
 3- KC.txt
@@ -16,3 +14,5 @@ config.py
 gabarito kcs .pdf
 gabarito_bruto.txt
 problema de não conseguir clicar.txt
+.env
+estrutura.txt

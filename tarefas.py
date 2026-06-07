@@ -10,28 +10,23 @@ def obter_tarefas_pendentes(page):
     except:
         pass
     
-    # Ordenar por Módulo para respeitar a linha de tempo do curso
     dropdown = page.locator('input#assignment_sort_order_select_menu')
     if dropdown.count() > 0:
-        # Só vai clicar se já não estiver ordenado por Módulo
         if dropdown.input_value() != "Módulo":
             print("Alterando a ordenação das tarefas para 'Módulo'...")
             dropdown.click()
-            time.sleep(1) # Aguarda a lista suspensa (dropdown) abrir na tela
+            time.sleep(1)
             
-            # Busca a opção exata escrita "Módulo" dentro da lista e clica
             page.get_by_role("option", name="Módulo", exact=True).click()
             
-            # Clica no botão Aplicar
             page.locator('button#apply_select_menus').click()
             
-            # Como o botão recarrega a página, esperamos a rede acalmar novamente
             try:
                 page.wait_for_load_state('networkidle', timeout=15000)
             except:
                 pass
             print("Aguardando 10 segundos para a tabela do Canvas renderizar...")
-            time.sleep(10) # 10 segundos de segurança para a tabela gigante aparecer
+            time.sleep(10)
             
     linhas = page.locator('//tbody/tr[contains(@class,"student_")]').all()
     
@@ -47,8 +42,7 @@ def obter_tarefas_pendentes(page):
             elif "KC" in nome_tarefa or re.match(r'^\d+', nome_tarefa):
                 tipo = "KC"
             else:
-                # Se não tem "Lab", nem "KC" e nem começa com um número de identificação, ignore!
-                print(f"Ignorando tarefa desconhecida: {nome_tarefa}")
+                print(f"Ignorando, tarefa não é Lab nem KC: {nome_tarefa}")
                 continue
                 
             tarefas.append({"nome": nome_tarefa, "url": BASE_URL + href, "tipo": tipo})
@@ -58,7 +52,6 @@ def obter_tarefas_pendentes(page):
 def abrir_tarefa(page, url_tarefa):
     page.goto(url_tarefa)
     
-    # Espera o carregamento da página
     try:
         page.wait_for_load_state('networkidle', timeout=15000)
     except:
@@ -66,7 +59,6 @@ def abrir_tarefa(page, url_tarefa):
     import time
     time.sleep(3)
     
-    # Verifica se a tarefa já foi enviada e está aguardando revisão do feedback do instrutor
     status_locator = page.locator('div[data-testid="submission-workflow-tracker-subtitle"]')
     if status_locator.count() > 0:
         texto_status = status_locator.first.inner_text().strip()
@@ -75,7 +67,6 @@ def abrir_tarefa(page, url_tarefa):
             return None
     
     with page.context.expect_page() as nova_aba_info:
-        # O botão está DENTRO do iframe com class "tool_launch"
         iframe = page.frame_locator('iframe.tool_launch')
         iframe.locator('div.load_tab button').click(force=True)
         

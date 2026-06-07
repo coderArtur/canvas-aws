@@ -7,12 +7,10 @@ from lab import resolver_lab
 from kc import resolver_kc
 import json
 
-# Carrega o arquivo JSON gerado com todas as respostas do PDF
 with open("gabarito.json", "r", encoding="utf-8") as f:
     gabarito = json.load(f)
 
 def main():
-    # Menu interativo no terminal
     print("===================================")
     print(" 1 - Apenas KCs")
     print(" 2 - Apenas Labs")
@@ -32,7 +30,6 @@ def main():
         tarefas = obter_tarefas_pendentes(page)
         
         for tarefa in tarefas:
-            # Lógica de filtro baseada na escolha
             if escolha == "1" and tarefa['tipo'] != "KC":
                 continue
             if escolha == "2" and tarefa['tipo'] != "Lab":
@@ -41,7 +38,6 @@ def main():
             print(f"Resolvendo: {tarefa['nome']}")
             nova_aba = abrir_tarefa(page, tarefa['url'])
             
-            # Se a tarefa foi pulada (ex: aguardando revisão), nova_aba será None
             if not nova_aba:
                 continue
             
