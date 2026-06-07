@@ -7,7 +7,7 @@ Se você nunca usou programação antes, não se preocupe! Siga este passo a pas
 ---
 
 ## 🚀 O que este robô faz?
-Ele acessa sua conta do Canvas da AWS e procura por tarefas pendentes. 
+Ele acessa sua conta do Canvas da AWS e procura por tarefas pendentes, tarefas que já possuem notas ele irá ignorar. 
 - **Knowledge Checks (KCs)**: O robô usa um gabarito inteligente. Ele lê a questão, compara com as respostas conhecidas, e marca a opção correta. Se ele não souber a resposta, ele dá chutes calculados!
 - **Laboratórios (Labs)**: O robô entra nos laboratórios (tanto os antigos quanto a nova versão do Vocareum), inicia as máquinas virtuais, aguarda elas ligarem, envia para avaliação, aguarda a sua nota 1/1, e encerra o lab sozinho.
 
