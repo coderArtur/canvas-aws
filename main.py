@@ -41,6 +41,10 @@ def main():
             print(f"Resolvendo: {tarefa['nome']}")
             nova_aba = abrir_tarefa(page, tarefa['url'])
             
+            # Se a tarefa foi pulada (ex: aguardando revisão), nova_aba será None
+            if not nova_aba:
+                continue
+            
             if tarefa['tipo'] == "Lab":
                 resolver_lab(nova_aba)
             else:

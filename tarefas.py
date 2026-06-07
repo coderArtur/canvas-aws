@@ -57,6 +57,14 @@ def abrir_tarefa(page, url_tarefa):
     import time
     time.sleep(3)
     
+    # Verifica se a tarefa já foi enviada e está aguardando revisão do feedback do instrutor
+    status_locator = page.locator('div[data-testid="submission-workflow-tracker-subtitle"]')
+    if status_locator.count() > 0:
+        texto_status = status_locator.first.inner_text().strip()
+        if texto_status == "PRÓXIMO: Revisão de feedback":
+            print("  -> Tarefa já enviada e aguardando revisão. Pulando...")
+            return None
+    
     with page.context.expect_page() as nova_aba_info:
         # O botão está DENTRO do iframe com class "tool_launch"
         iframe = page.frame_locator('iframe.tool_launch')

@@ -27,9 +27,135 @@ def normalizar_texto(texto):
     # 4. Remove espaços extras e junta tudo
     return " ".join(texto.split())
 
+def resolver_kc_v2(nova_aba, nome_kc, gabarito):
+    print("  -> Estrutura Versão 2 (Vocareum) do KC detectada")
+    
+    # Selecionar idioma PT-BR (Pode estar na main page ou iframe)
+    try:
+        lang_select = nova_aba.locator('select#localeLangReadmeSelect')
+        if lang_select.count() > 0:
+            lang_select.select_option('pt-br')
+            time.sleep(2)
+        else:
+            lang_select_frame = nova_aba.frame_locator('iframe#panel3-iframe').locator('select#localeLangReadmeSelect')
+            if lang_select_frame.count() > 0:
+                lang_select_frame.select_option('pt-br')
+                time.sleep(2)
+    except:
+        pass
+
+    # Aguarda um pouco extra após possível reload de idioma
+    time.sleep(3)
+    
+    # Tenta descobrir onde as perguntas estão buscando em todos os frames
+    context = None
+    print("  Procurando perguntas nos frames disponíveis...")
+    for frame in nova_aba.frames:
+        if frame.locator('.voc_radio_label').count() > 0:
+            print(f"  -> Perguntas encontradas no frame: {frame.name} ({frame.url})")
+            context = frame
+            break
+            
+    if not context:
+        print("  -> Perguntas NÃO encontradas em nenhum frame. Usando página principal como fallback.")
+        context = nova_aba
+
+    # Pega apenas as respostas da tarefa atual
+    match = re.search(r'\d+', nome_kc)
+    chave_gabarito = match.group() if match else nome_kc
+    respostas_corretas = gabarito.get(chave_gabarito, [])
+
+    for indice, alternativas_corretas in enumerate(respostas_corretas):
+        print(f"  Respondendo página/questão {indice + 1}...")
+        
+        # Espera carregar as opções da página atual
+        time.sleep(2)
+        
+        # Pega todas as opções (inclusive as de outras abas/páginas escondidas)
+        opcoes_na_tela = context.locator('.voc_radio_label').all()
+        for opcao in opcoes_na_tela:
+            # Só processa se a opção estiver visível (evita clicar em questões de outras abas)
+            if not opcao.is_visible():
+                continue
+                
+            texto_opcao = normalizar_texto(opcao.text_content())
+            maior_score = 0
+            
+            for correto_raw in alternativas_corretas:
+                correto = normalizar_texto(correto_raw)
+                if not correto:
+                    continue
+                    
+                if correto in texto_opcao or texto_opcao in correto:
+                    score_substring = 1.0
+                else:
+                    score_substring = 0.0
+                    
+                score_fuzzy = difflib.SequenceMatcher(None, texto_opcao, correto).ratio()
+                score_atual = max(score_substring, score_fuzzy)
+                
+                if score_atual > maior_score:
+                    maior_score = score_atual
+                    
+            if maior_score > 0.80:
+                try:
+                    opcao.click(timeout=3000)
+                    time.sleep(0.5)
+                except:
+                    pass
+
+        # Se chegamos na última resposta cadastrada para este KC, sai do loop
+        if indice == len(respostas_corretas) - 1:
+            print("  Última página alcançada pelo gabarito.")
+            break
+            
+        # Senão, deve haver um botão Next
+        try:
+            # Como todas as abas são carregadas de uma vez, o botão Next da aba atual 
+            # corresponde ao índice da pergunta atual ('indice')
+            btn_next = context.locator('.btnNext')
+            if btn_next.count() > indice:
+                btn_next.nth(indice).click(force=True, timeout=3000)
+            else:
+                # Fallback pelo texto
+                context.locator('a:has-text("Next")').nth(indice).click(force=True, timeout=3000)
+                
+            time.sleep(2)
+        except Exception as e:
+            print(f"  Aviso: Não conseguiu clicar no botão Next. Erro: {e}")
+                
+    # Submeter
+    print("  Submetendo KC (Vocareum)...")
+    btn_submit = nova_aba.locator('div#btn-submitasn:has-text("Submit")')
+    if btn_submit.count() > 0:
+        btn_submit.first.click()
+        time.sleep(2)
+        
+    # Clicar em Yes no popup
+    btn_yes = nova_aba.locator('a.vocbtn-action:has-text("Yes")')
+    if btn_yes.count() > 0:
+        try:
+            btn_yes.first.click(timeout=3000)
+        except:
+            pass
+            
+    # Aguarda o tempo fixo solicitado pelo usuário em vez de procurar relatórios
+    print("  Aguardando 15 segundos para consolidação...")
+    time.sleep(15)
+            
+    print("  KC concluído com sucesso!")
+    nova_aba.close()
+
 def resolver_kc(nova_aba, nome_kc, gabarito):
     nova_aba.wait_for_load_state('networkidle')
     time.sleep(3) # Aguarda o Articulate Storyline carregar todos os frames
+    
+    # Verifica se é a versão 2 (Vocareum KC)
+    btn_submit = nova_aba.locator('div#btn-submitasn:has-text("Submit")')
+    if btn_submit.count() > 0:
+        resolver_kc_v2(nova_aba, nome_kc, gabarito)
+        return
+
     
     # O conteúdo interativo do KC vive dentro do frame "ScormContent" (aninhado em vários iframes)
     # Usar .frame() busca pelo nome em qualquer profundidade

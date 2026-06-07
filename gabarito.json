@@ -678,34 +678,35 @@
             "Amazon Aurora"
         ],
         [
-            "AWS DMS"
+            "AWS Database Migration Service (AWS DMS)"
         ],
         [
             "Amazon Redshift"
         ],
         [
-            "15 Réplicas"
+            "otimização de aplicações"
         ],
         [
-            "Amazon DynamoDB"
+            "Amazon DynamoDB",
+            "Amazon Neptune"
         ]
     ],
     "216": [
         [
-            "NAT"
+            "Puerta de enlace  de NAT"
         ],
         [
-            "O virtual private cloud (VPC) não tem um gateway da Internet."
+            "Registros de flujo de VPC"
         ],
         [
-            "Endereço IP Elástico"
+            "Reglas de permiso y de denegación"
         ],
         [
-            "As associações de security group poderão ser adicionadas e modificadas depois que uma instância for criada.",
-            "Um security group pode ser aplicado em várias instâncias."
+            "Los grupos de seguridad contienen una tabla de reglas de entrada y una tabla de reglas de salida",
+            "El grupo de seguridad predeterminado permite todo el tráfico entre los recursos que están asignados al mismo grupo de seguridad"
         ],
         [
-            "Sub-rede"
+            "Subred"
         ]
     ],
     "217": [
@@ -1908,7 +1909,8 @@
             "Gerenciador de sessão"
         ],
         [
-            "JSON ou YAML"
+            "JavaScript Object Notation (JSON)",
+            "YAML Ain't Markup Language (YAML)"
         ],
         [
             "AWS OpsWorks"
