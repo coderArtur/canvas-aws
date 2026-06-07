@@ -54,16 +54,13 @@ def resolver_lab(nova_aba):
         nova_aba.close()
         return
 
-    # Vamos aguardar até 4 segundos para ver se o popup modal da AWS (Versão 2) aparece na tela
-    is_v2 = False
-    try:
-        # Na versão 2 (AWS modal), o popup de progresso fica *visível* logo após clicar no botão
-        nova_aba.locator('p#report_aws_progress_box').wait_for(state="visible", timeout=4000)
-        is_v2 = True
-    except:
-        is_v2 = False
-
-    if is_v2:
+    # Vamos detectar se é V1 ou V2 usando a presença do ícone de status (LED) exclusivo da V1
+    # O vmstatus (verde/amarelo/vermelho) fica visível na tela o tempo todo na versão 1
+    is_v1 = False
+    if nova_aba.locator('i#vmstatus').count() > 0:
+        is_v1 = True
+        
+    if not is_v1:
         print("  -> Estrutura Versão 2 do Lab detectada (Modal AWS)")
         # ================================
         # VERSÃO 2 (AWS CloudFormation Modals)
@@ -127,6 +124,14 @@ def resolver_lab(nova_aba):
         print("  Aguardando nota 1/1...")
         nova_aba.frame_locator('iframe[src*="grades_review"]').locator('tr#totalScore:has-text("1/1")').wait_for(state="visible", timeout=300000)
         time.sleep(2)
+        
+        # Fecha o popup de submissão caso ele tenha aparecido na V1 (para não bloquear o clique no End Lab)
+        try:
+            if nova_aba.locator('#modal-table-report-submission').is_visible():
+                nova_aba.locator('#modal-table-report-submission button.close[data-dismiss="modal"]').click(timeout=3000)
+                time.sleep(2)
+        except:
+            pass
         
         # Encerrar Lab e aceitar popup genérico
         print("  Encerrando Lab...")
