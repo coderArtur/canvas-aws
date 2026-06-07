@@ -5,7 +5,10 @@ import re
 def obter_tarefas_pendentes(page):
     tarefas = []
     page.goto(URL_ATIVIDADES)
-    page.wait_for_load_state('networkidle')
+    try:
+        page.wait_for_load_state('networkidle', timeout=15000)
+    except:
+        pass
     
     # Ordenar por Módulo para respeitar a linha de tempo do curso
     dropdown = page.locator('input#assignment_sort_order_select_menu')
@@ -23,7 +26,10 @@ def obter_tarefas_pendentes(page):
             page.locator('button#apply_select_menus').click()
             
             # Como o botão recarrega a página, esperamos a rede acalmar novamente
-            page.wait_for_load_state('networkidle')
+            try:
+                page.wait_for_load_state('networkidle', timeout=15000)
+            except:
+                pass
             print("Aguardando 10 segundos para a tabela do Canvas renderizar...")
             time.sleep(10) # 10 segundos de segurança para a tabela gigante aparecer
             
@@ -53,7 +59,10 @@ def abrir_tarefa(page, url_tarefa):
     page.goto(url_tarefa)
     
     # Espera o carregamento da página
-    page.wait_for_load_state('networkidle')
+    try:
+        page.wait_for_load_state('networkidle', timeout=15000)
+    except:
+        pass
     import time
     time.sleep(3)
     

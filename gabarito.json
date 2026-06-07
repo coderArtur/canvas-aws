@@ -270,7 +270,8 @@
             "Regiões AWS"
         ],
         [
-            "Tolerante a falhas, elásticas e escaláveis"
+            "Tolerante a falhas",
+            "Elásticas e escaláveis"
         ],
         [
             "Verdadeiro"
@@ -308,7 +309,8 @@
             "Executa quatro instâncias reservadas.."
         ],
         [
-            "AMI e Tipo de instância"
+            "AMI",
+            "Tipo de instância"
         ],
         [
             "As instâncias do Amazon EC2.."
@@ -1921,13 +1923,15 @@
             "Governança de dados, requisitos legais"
         ],
         [
-            "CloudFront, Route 53 e IAM"
+            "Amazon CloudFront",
+            "Amazon Route 53",
+            "AWS Identity and Access Management (IAM)"
         ],
         [
             "Amazon CloudFront"
         ],
         [
-            "Amazon S3"
+            "Amazon Simple Storage Service (Amazon S3)"
         ],
         [
             "Tabela"
@@ -1936,7 +1940,8 @@
             "--dry -run"
         ],
         [
-            "SNS e Lambda"
+            "Amazon Simple Notification Service (Amazon SNS)",
+            "AWS Lambda"
         ],
         [
             "169.254.169.254"
@@ -1947,7 +1952,10 @@
         [
             "Sob demanda"
         ],
-        [],
+        [
+            "Interromper a instância",
+            "Iniciar a instância"
+        ],
         [
             "WebSockets"
         ],
@@ -1960,7 +1968,8 @@
             "Conclui as verificações de integridade do recurso para garantir que ele possa ser acessado."
         ],
         [
-            "ElastiCache e DynamoDB"
+            "Amazon ElastiCache",
+            "Amazon DynamoDB"
         ],
         [
             "Sem servidor"

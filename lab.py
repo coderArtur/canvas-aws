@@ -1,13 +1,19 @@
 import time
 
 def resolver_lab(nova_aba):
-    nova_aba.wait_for_load_state('networkidle')
+    try:
+        nova_aba.wait_for_load_state('networkidle', timeout=15000)
+    except:
+        pass
     time.sleep(3)
     
     # Se aparecer os termos para aceitar
     if "terms_new" in nova_aba.url:
         nova_aba.locator('button[type="submit"]:has-text("I Agree")').click()
-        nova_aba.wait_for_load_state('networkidle')
+        try:
+            nova_aba.wait_for_load_state('networkidle', timeout=15000)
+        except:
+            pass
         time.sleep(2)
         
     # --- Identifica se existe o botão de Start Lab (V1 e V2) ou se não tem (V1.1) ---

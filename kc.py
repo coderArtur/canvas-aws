@@ -147,7 +147,10 @@ def resolver_kc_v2(nova_aba, nome_kc, gabarito):
     nova_aba.close()
 
 def resolver_kc(nova_aba, nome_kc, gabarito):
-    nova_aba.wait_for_load_state('networkidle')
+    try:
+        nova_aba.wait_for_load_state('networkidle', timeout=15000)
+    except:
+        pass
     time.sleep(3) # Aguarda o Articulate Storyline carregar todos os frames
     
     # Verifica se é a versão 2 (Vocareum KC)
