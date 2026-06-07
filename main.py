@@ -21,7 +21,8 @@ def main():
     
     with sync_playwright() as p:
         browser = p.chromium.launch(headless=OCULTAR_TELA)
-        context = browser.new_context()
+        # Configura a resolução fixa para o padrão que já estava funcionando (1280x720)
+        context = browser.new_context(viewport={'width': 1280, 'height': 720})
         page = context.new_page()
         
         print("\nRealizando login...")
