@@ -829,7 +829,8 @@
     ],
     "297": [
         [
-            "Regulatórios e Contratuais"
+            "Regulatórios",
+            "Contratuais"
         ],
         [
             "Regulamentos governamentais"
@@ -850,10 +851,12 @@
             "Um serviço da web que usa arquivos de log para gravar eventos.."
         ],
         [
-            "Simplifica as auditorias.. e Fornece visibilidade gravando.."
+            "Simplifica as auditorias",
+            "Fornece visibilidade gravando.."
         ],
         [
-            "O endereço IP.. e O usuário que executou a solicitação."
+            "O endereço IP",
+            "O usuário que executou a solicitação."
         ],
         [
             "Agregar arquivos de log em um único bucket do Amazon Simple Storage Service (Amazon S3).",
@@ -868,7 +871,8 @@
             "Uma ferramenta que rastreia mudança nos recursos"
         ],
         [
-            "Recuperação de inventário.. e envio de notificações.."
+            "Recuperação de inventário",
+            "envio de notificações"
         ],
         [
             "AWS Lambda"
@@ -883,10 +887,12 @@
     ],
     "295": [
         [
-            "Otimização de custos e tolerância a falhas"
+            "Otimização de custos",
+            "tolerância a falhas"
         ],
         [
-            "MFA na conta raiz e uso do IAM"
+            "Autenticacao com multifator (MFA) em conta raiz",
+            "Uso do AWS Identity and Access Management (IAM)"
         ],
         [
             "A ação é recomendada."
@@ -917,14 +923,19 @@
     ],
     "298": [
         [
-            "Equipes de conta e consultorias e boletins"
+            "Consultorias e boletins da AWS",
+            "Equipes de conta da AWS"
         ],
-        [],
+        [
+            "Guias técnicos da AWS",
+            "Caminho de aprendizagem para auditores da AWS"
+        ],
         [
             "Consultorias e boletins da AWS"
         ],
         [
-            "Um TAM e suporte 24x7"
+            "Suporte 24 horas por dia, 7 dias por semana, por telefone, chat ou e-mail",
+            "Um technical account manager (TAM) da AWS dedicado"
         ],
         [
             "Eles orientam os clientes durante a implantação e implementação."
@@ -1437,7 +1448,8 @@
     ],
     "290": [
         [
-            "Dispositivo removível e site não confiável"
+            "Dispositivo removível",
+            "site não confiável"
         ],
         [
             "Fazer uma varredura regular no sistema"
@@ -1446,7 +1458,8 @@
             "Atualizar os arquivos de definição de vírus com frequência."
         ],
         [
-            "Em um servidor e em uma rede"
+            "Em um servidor",
+            "em uma rede"
         ],
         [
             "Registros de fluxo da nuvem privada virtual (VPC)"
@@ -1454,7 +1467,8 @@
     ],
     "293": [
         [
-            "BCP e DRP"
+            "Plano de continuidade de negócios (BCP)",
+            "Plano de recuperação de desastres (DRP)"
         ],
         [
             "Definir como administrar o negócio com capacidade reduzida"
@@ -1481,10 +1495,12 @@
             "Fornece os dados usados para a identificação do problema."
         ],
         [
-            "Como a violação poderia ter sido evitada? E Como a violação aconteceu?"
+            "Como a violação poderia ter sido evitada?",
+            "Como a violação aconteceu?"
         ],
         [
-            "Quem realiza as tarefas de monitoramento? E Quais recursos são monitorados?"
+            "Quem realiza as tarefas de monitoramento?",
+            "Quais recursos são monitorados?"
         ]
     ],
     "283": [
@@ -1545,10 +1561,12 @@
     ],
     "119": [
         [
-            "Python e JavaScript"
+            "Python",
+            "JavaScript"
         ],
         [
-            "IDEs destacam sintaxe incorreta e IDEs sugerem soluções para problemas."
+            "IDEs destacam sintaxe incorreta",
+            "IDEs sugerem soluções para problemas."
         ],
         [
             "daysInWeek = 7"
@@ -1557,18 +1575,22 @@
             "for (para)"
         ],
         [
-            "if e elif"
+            "if (se)",
+            "elif"
         ]
     ],
     "121": [
         [
-            "nomedocliente1 e sobrenomedocliente"
+            "nomedocliente1",
+            "sobrenomedocliente"
         ],
         [
-            "Inteiros e Strings"
+            "Inteiros",
+            "Strings"
         ],
         [
-            "msg = “Sou uma mensagem” e msg = “Sou uma” + “mensagem”"
+            "msg = “Sou uma mensagem”",
+            "msg = “Sou uma” + “mensagem”"
         ],
         [
             "15"
@@ -1585,13 +1607,15 @@
             "Adulto"
         ],
         [
-            "Pode ser executado indefinidamente e É executado enquanto uma condição for verdadeira."
+            "Pode ser executado indefinidamente",
+            "É executado enquanto uma condição for verdadeira."
         ],
         [
             "Podem conter vários tipos de dados [como string, int ou float]."
         ],
         [
-            "if/elif/else e if/else (se, então)"
+            "if/elif/else",
+            "if/else (se, então)"
         ]
     ],
     "125": [
@@ -1671,10 +1695,12 @@
             "Cultura Adhocrática"
         ],
         [
-            "Versão e Implantação"
+            "Versão",
+            "Implantação"
         ],
         [
-            "Compilação e teste"
+            "Compilação",
+            "teste"
         ],
         [
             "Automação da compilação"
@@ -1702,7 +1728,8 @@
             "Uma coleção de dados que são organizados em tabelas"
         ],
         [
-            "Colunas e Tabelas"
+            "Colunas",
+            "Tabelas"
         ],
         [
             "Os bancos de dados NoSQL têm um esquema flexível",
@@ -1763,7 +1790,8 @@
             "Combina strings de várias colunas e as reúne em uma linha."
         ],
         [
-            "Para adicionar novos dados a um banco de dados e Para adicionar um novo registro a uma tabela"
+            "Para adicionar novos dados a um banco de dados",
+            "Para adicionar um novo registro a uma tabela"
         ]
     ],
     "303": [

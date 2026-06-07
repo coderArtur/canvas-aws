@@ -43,9 +43,10 @@ def resolver_kc(nova_aba, nome_kc, gabarito):
     # Verifica e clica em "Reiniciar" na tela de proteção (mobile/resume overlay) caso apareça
     try:
         btn_reiniciar = frame.locator('button.restart[aria-label="Reiniciar"]')
-        if btn_reiniciar.count() > 0:
-            btn_reiniciar.first.dispatch_event('click')
-            time.sleep(2)
+        # Espera no máximo 3 segundos para ver se o botão aparece
+        btn_reiniciar.wait_for(state="attached", timeout=3000)
+        btn_reiniciar.first.dispatch_event('click')
+        time.sleep(2)
     except:
         pass
         
@@ -53,7 +54,9 @@ def resolver_kc(nova_aba, nome_kc, gabarito):
     # O usuário confirmou que dispatch_event funciona para o popup
     try:
         botao_nao = frame.locator('button[aria-label="Não"]')
-        botao_nao.dispatch_event('click')
+        # Espera no máximo 3 segundos para ver se o popup "Não" aparece
+        botao_nao.wait_for(state="attached", timeout=3000)
+        botao_nao.first.dispatch_event('click')
         time.sleep(3)
     except:
         pass  # Se não aparecer o popup, segue normalmente
@@ -157,7 +160,7 @@ def resolver_kc(nova_aba, nome_kc, gabarito):
         
     # Ao terminar todas as questões e sair do loop, aguarda a tela de finalização
     # Pode ser "Resultados da verificação de conhecimento" ou "Resultados do teste de conhecimento"
-    frame.locator('span:has-text("Resultados da verificação de conhecimento"), span:has-text("Resultados do teste de conhecimento")').wait_for(state="visible", timeout=60000)
+    # frame.locator('span:has-text("Resultados da verificação de conhecimento"), span:has-text("Resultados do teste de conhecimento")').wait_for(state="visible", timeout=60000)
     time.sleep(3)
     
     # Fecha a aba
