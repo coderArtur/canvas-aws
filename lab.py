@@ -83,12 +83,40 @@ def resolver_lab(nova_aba):
         
         # Aguardar relatório de submissão
         print("  Aguardando relatório de submissão da nota...")
-        nova_aba.locator('p#report_submission_msg_box:has-text("Executed at:")').wait_for(state="visible", timeout=300000)
-        time.sleep(2)
-        
-        # Fecha o popup de submissão
-        nova_aba.locator('#modal-table-report-submission button.close[data-dismiss="modal"]').click()
-        time.sleep(2)
+        relatorio_encontrado = False
+        for _ in range(60): # 60 iterações de 5s = 5 minutos no total
+            # Possibilidade 1: Popup "Executed at:"
+            if nova_aba.locator('p#report_submission_msg_box:has-text("Executed at:")').is_visible():
+                time.sleep(2)
+                try:
+                    # Fecha o popup de submissão
+                    nova_aba.locator('#modal-table-report-submission button.close[data-dismiss="modal"]').click(timeout=3000)
+                except:
+                    pass
+                relatorio_encontrado = True
+                break
+                
+            # Possibilidade 2: Novo painel lateral (gradeframe)
+            try:
+                if nova_aba.locator('div#gradeframe').is_visible():
+                    iframe = nova_aba.frame_locator('div#gradeframe iframe[src*="grades_review"]')
+                    # Quando a tabela com a nota aparecer, sabemos que terminou
+                    if iframe.locator('tr#totalScore').is_visible():
+                        time.sleep(2)
+                        try:
+                            # Fecha o painel lateral no botão de menos (-)
+                            nova_aba.locator('div#gradeframehide').click(timeout=3000)
+                        except:
+                            pass
+                        relatorio_encontrado = True
+                        break
+            except:
+                pass
+                
+            time.sleep(5)
+            
+        if not relatorio_encontrado:
+            print("  Aviso: Tempo limite esgotado aguardando o relatório, prosseguindo com o encerramento...")
         
         # Encerrar Lab
         print("  Encerrando Lab...")
