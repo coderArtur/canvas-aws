@@ -68,7 +68,7 @@ playwright install chromium
 O robô precisa saber como fazer login no seu Canvas. Nós mantemos isso seguro usando um arquivo oculto chamado `.env`.
 
 1. Na pasta do projeto, você verá um arquivo chamado `.env.example`.
-2. **Faça uma cópia** desse arquivo e renomeie a cópia para apenas `.env` (sem nenhum nome antes do ponto).
+2. **Faça uma cópia** desse arquivo e **renomeie a cópia para apenas `.env`** (sem nenhum nome antes do ponto).
 3. Abra o arquivo `.env` no Bloco de Notas (ou qualquer editor) e coloque o seu e-mail e sua senha do Canvas:
 
 ```env

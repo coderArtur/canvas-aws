@@ -6,6 +6,7 @@ from tarefas import obter_tarefas_pendentes, abrir_tarefa
 from lab import resolver_lab
 from kc import resolver_kc
 import json
+import os
 
 with open("gabarito.json", "r", encoding="utf-8") as f:
     gabarito = json.load(f)
@@ -50,4 +51,8 @@ def main():
         browser.close()
 
 if __name__ == "__main__":
-    main()
+    try:
+        main()
+    except KeyboardInterrupt:
+        print("\n\nExecução interrompida pelo usuário (Ctrl+C). Saindo com segurança...")
+        os._exit(0)
