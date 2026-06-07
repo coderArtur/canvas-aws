@@ -588,13 +588,15 @@
     ],
     "209": [
         [
-            "EFS E S3"
+            "Amazon Elastic File System (Amazon EFS)",
+            "Amazon S3"
         ],
         [
-            "AWS IAM"
+            "AWS Identity and Access Management (IAM)"
         ],
         [
-            "Computação e segurança, identidade e conformidade"
+            "Computação",
+            "Segurança, identidade e conformidade"
         ],
         [
             "Amazon EC2"
@@ -999,7 +1001,8 @@
             "man hostname"
         ],
         [
-            "Kernel e ferramentas e aplicativos complementares"
+            "Kernel",
+            "Ferramentas e aplicativos complementares"
         ]
     ],
     "228": [
@@ -1021,10 +1024,12 @@
     ],
     "230": [
         [
-            "Os usuários podem redefinir suas próprias senhas e as senhas são definidas com o comando passwd"
+            "Os usuários podem redefinir suas próprias senhas",
+            "As senhas são definidas com o comando passwd"
         ],
         [
-            "Controlar todos os arquivos de propriedade do usuário e acessar todos os arquivos para os quais o usuário possui permissões"
+            "Controlar todos os arquivos de propriedade do usuário",
+            "acessar todos os arquivos para os quais o usuário possui permissões"
         ],
         [
             "su"
@@ -1033,7 +1038,7 @@
             "usermod"
         ],
         [
-            "Sempre faça login como um usuário padrão e alternete o usuário para a conta raiz somente quando você precisar elevar as permissões"
+            "Sempre faça login como um usuário padrão e alterne o usuário para a conta raiz somente quando você precisar elevar as permissões"
         ]
     ],
     "232": [
@@ -1055,7 +1060,8 @@
     ],
     "234": [
         [
-            "Os nomes dos arquivos diferenciam letras maiúsculas de minúsculas e as extensões são opcionais"
+            "Os nomes dos arquivos diferenciam letras maiúsculas de minúsculas",
+            "as extensões são opcionais"
         ],
         [
             "/home"
@@ -1072,7 +1078,8 @@
     ],
     "236": [
         [
-            "File size e File name"
+            "File size (Tamanho do arquivo)",
+            "File name (Nome do arquivo)"
         ],
         [
             "cksum"
@@ -1171,7 +1178,8 @@
             "As informações pessoais de um usuário final podem ter sido armazenadas no arquivo de log."
         ],
         [
-            "head e tail"
+            "head (cabeçalho)",
+            "tail (parte traseira)"
         ],
         [
             "lastlog"
@@ -1179,7 +1187,8 @@
     ],
     "248": [
         [
-            "? E *"
+            "?",
+            "*"
         ],
         [
             "cd .. ; rm *.csv ; ls *.csv"
@@ -1191,7 +1200,8 @@
             "Um editor de texto não interativo"
         ],
         [
-            "> e >>"
+            ">",
+            ">>"
         ]
     ],
     "250": [
@@ -1213,7 +1223,8 @@
     ],
     "252": [
         [
-            "Para automatizar e para garantir que uma tarefa seja.."
+            "Para automatizar uma tarefa repetitiva.",
+            "Para garantir que uma tarefa seja executada de forma correta e consistente."
         ],
         [
             "#!/bin/bash"
@@ -1293,7 +1304,7 @@
             "Ela determina para onde o tráfego de rede é direcionado dentro da nuvem privada virtual (VPC)."
         ],
         [
-            "Ele atua como um firewall stateful que controla o tráfego de rede.."
+            "Ele atua como um firewall stateful que controla o tráfego de rede de entrada e o tráfego de rede de saída."
         ]
     ],
     "258": [
@@ -1319,13 +1330,15 @@
             "Protocolo de correios (POP)"
         ],
         [
-            "MQTT e HTTPS"
+            "Transporte de telemetria mq (MQTT)",
+            "Protocolo de transferência de hipertexto (HTTPS)"
         ],
         [
             "Fazer com que dispositivos que possam se conectar à internet relatem dados e sejam monitorados ou controlados remotamente."
         ],
         [
-            "BYOD e MDM"
+            "Traga seu próprio dispositivo (BYOD)",
+            "Gerenciamento de dispositivos móveis (MDM)"
         ],
         [
             "Amazon WorkSpaces"
@@ -1333,13 +1346,17 @@
     ],
     "259": [
         [
-            "SSL e TLS"
+            "Secure Sockets Layer (SSL)",
+            "Transport Layer Security (TLS)"
         ],
         [
-            "O número de porta padrão para HTTP é 80 e HTTP é um protocolo cliente-servidor"
+            "O número de porta padrão para HTTP é 80",
+            "HTTP é um protocolo cliente-servidor"
         ],
         [
-            "SYN, ACK e SYN/ACK"
+            "Sincronizar (SYN)",
+            "reconhecer (ACK)",
+            "SYN/ACK"
         ],
         [
             "tcpdump"
@@ -1376,7 +1393,8 @@
             "Confidencialidade"
         ],
         [
-            "SSL e TLS"
+            "Secure Sockets Layer (ssl)",
+            "Transport Layer Security (tls)"
         ],
         [
             "O destinatário da mensagem"
@@ -1404,10 +1422,11 @@
             "Administrar usuários e suas permissões de acesso"
         ],
         [
-            "Autenticação e autorização"
+            "Autenticação",
+            "autorização"
         ],
         [
-            "MFA"
+            "Autenticação com multifator (MFA)"
         ],
         [
             "Em um documento de política anexada ao usuário"
@@ -1470,7 +1489,9 @@
     ],
     "283": [
         [
-            "Identificar.. Avaliar.. Implementar.."
+            "Identificar ativos a serem protegidos.",
+            "Avaliar a vulnerabilidade de ativos.",
+            "Implementar contramedidas."
         ],
         [
             "AWS Systems manager"
@@ -1479,7 +1500,9 @@
             "O ativo valioso é protegido por muitas camadas de diferentes tipos de medidas de segurança."
         ],
         [
-            "Reforço de sistemas, reforço da rede e controles de segurança de dados."
+            "Reforço de sistemas",
+            "reforço da rede",
+            "controles de segurança de dados."
         ],
         [
             "Conceder aos usuários acesso somente aos recursos que eles têm autorização para acessar."
@@ -1490,7 +1513,7 @@
             "Verificação de porta"
         ],
         [
-            "ICMP"
+            "internet control message protocol (ICMP - protocolo de mensagem de controle da internet)"
         ],
         [
             "Ele filtra pacotes que entram e saem de uma rede"
@@ -1500,7 +1523,7 @@
             "Ela melhora o desempenho do tráfego de rede."
         ],
         [
-            "Um firewall que protege instâncias EC2"
+            "Um firewall que protege instâncias EC2 do amazon elastic compute cloud (amazon EC2)"
         ]
     ],
     "117": [

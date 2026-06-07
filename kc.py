@@ -8,22 +8,28 @@ def normalizar_texto(texto):
     if not texto:
         return ""
         
+    texto = str(texto).strip()
+    if texto.endswith("..."):
+        texto = texto[:-3]
+    elif texto.endswith(".."):
+        texto = texto[:-2]
+        
     # 1. Deixa tudo minúsculo
     texto = texto.lower()
     
     # 2. Remove todas as acentuações (á, ã, ç viram a, a, c)
     texto = unicodedata.normalize('NFKD', texto).encode('ASCII', 'ignore').decode('utf-8')
     
-    # 3. Substitui qualquer pontuação (hífen, ponto, vírgula) por espaço
-    for p in string.punctuation:
-        texto = texto.replace(p, " ")
+    # # 3. Substitui qualquer pontuação (hífen, ponto, vírgula) por espaço
+    # for p in string.punctuation:
+    #     texto = texto.replace(p, " ")
         
     # 4. Remove espaços extras e junta tudo
     return " ".join(texto.split())
 
 def resolver_kc(nova_aba, nome_kc, gabarito):
     nova_aba.wait_for_load_state('networkidle')
-    time.sleep(5) # Aguarda o Articulate Storyline carregar todos os frames
+    time.sleep(3) # Aguarda o Articulate Storyline carregar todos os frames
     
     # O conteúdo interativo do KC vive dentro do frame "ScormContent" (aninhado em vários iframes)
     # Usar .frame() busca pelo nome em qualquer profundidade
@@ -31,9 +37,18 @@ def resolver_kc(nova_aba, nome_kc, gabarito):
     
     # Aguarda o frame carregar (pode demorar um pouco em conexões lentas)
     if not frame:
-        time.sleep(5)
+        time.sleep(3)
         frame = nova_aba.frame(name="ScormContent")
     
+    # Verifica e clica em "Reiniciar" na tela de proteção (mobile/resume overlay) caso apareça
+    try:
+        btn_reiniciar = frame.locator('button.restart[aria-label="Reiniciar"]')
+        if btn_reiniciar.count() > 0:
+            btn_reiniciar.first.dispatch_event('click')
+            time.sleep(2)
+    except:
+        pass
+        
     # --- MUDANÇA AQUI: Usar dispatch_event APENAS para o popup "Não" ---
     # O usuário confirmou que dispatch_event funciona para o popup
     try:
@@ -132,7 +147,8 @@ def resolver_kc(nova_aba, nome_kc, gabarito):
                         pass
             
         # Clicar no botão ENVIAR da questão atual
-        frame.locator('button#submit:has(div.view-content:has-text("ENVIAR"))').click()
+        # Pode ter o texto "ENVIAR" ou apenas um ícone (mas sempre tem id="submit")
+        frame.locator('button#submit').click()
         time.sleep(1)
         
         # Clicar em Continuar para ir para a próxima questão (Este botão também é um popup do Storyline)
@@ -140,7 +156,9 @@ def resolver_kc(nova_aba, nome_kc, gabarito):
         time.sleep(1)
         
     # Ao terminar todas as questões e sair do loop, aguarda a tela de finalização
-    frame.locator('span:has-text("Resultados da verificação de conhecimento")').wait_for(state="visible", timeout=60000)
+    # Pode ser "Resultados da verificação de conhecimento" ou "Resultados do teste de conhecimento"
+    frame.locator('span:has-text("Resultados da verificação de conhecimento"), span:has-text("Resultados do teste de conhecimento")').wait_for(state="visible", timeout=60000)
+    time.sleep(3)
     
     # Fecha a aba
     nova_aba.close()
