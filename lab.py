@@ -108,10 +108,10 @@ def resolver_lab(nova_aba):
             print("  Aviso: Tempo limite esgotado aguardando o relatório, prosseguindo com o encerramento...")
         
         print("  Encerrando Lab...")
-        nova_aba.locator('div[role="button"]:has-text("End Lab")').click()
+        nova_aba.locator('div[role="button"]:has-text("End Lab")').click(force=True)
         time.sleep(2)
         
-        nova_aba.locator('a.vocbtn-action:has-text("Yes")').click()
+        nova_aba.locator('a.vocbtn-action:has-text("Yes")').click(force=True)
         
         print("  Aguardando término dos recursos na AWS...")
         nova_aba.locator('p#report_aws_msg_box:has-text("You may close this message box now")').wait_for(state="visible", timeout=600000)
@@ -143,9 +143,9 @@ def resolver_lab(nova_aba):
             pass
         
         print("  Encerrando Lab...")
-        nova_aba.locator('div[role="button"][aria-label="End Lab"]').click()
+        nova_aba.locator('div[role="button"][aria-label="End Lab"]').click(force=True)
         time.sleep(2)
-        nova_aba.locator('a.vocbtn-action:has-text("Yes")').click()
+        nova_aba.locator('a.vocbtn-action:has-text("Yes")').click(force=True)
         
         print("  Aguardando término da VM (LED Vermelho)...")
         nova_aba.locator('i[role="status"]#vmstatus.led-red').wait_for(state="visible", timeout=600000)
