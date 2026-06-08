@@ -110,8 +110,11 @@ A partir daí, relaxe e acompanhe pelo terminal os avisos dele resolvendo e ence
 ---
 
 ## ⚠️ Avisos Finais
+- **Atenção à Turma**: Este script está configurado por padrão com a URL de tarefas da turma **BRSAO261**. Caso você seja de outra turma, abra o arquivo `config.py` e altere a variável `URL_ATIVIDADES` para o link da sua turma. Você consegue esse link acessando a aba "Notas" dentro do seu curso no Canvas e copiando a URL do navegador.
+---
 - **O robô ignora tarefas aguardando revisão do professor**: Se ele detectar que a tarefa já foi respondida e está com status "PRÓXIMO: Revisão de feedback", ele inteligentemente pulará a tarefa para não bagunçar algo que você já enviou.
 - **Não feche o terminal**: Enquanto o robô trabalha, deixe a janelinha do terminal preta aberta. Se você fechá-la, o robô morre junto.
 - **Alterar o Modo Silencioso**: Por padrão, o robô trabalha escondido. Se você quiser *ver* a janela do navegador abrindo e o robô clicando nas coisas, basta abrir o arquivo `config.py` e trocar `OCULTAR_TELA = True` para `OCULTAR_TELA = False`. (Isso é útil se você quiser ver a mágica acontecendo).
+- **Aviso sobre Web Scraping**: Este projeto utiliza automação visual (*web scraping*). Isso significa que se a AWS ou o Canvas mudarem radicalmente o design, os nomes dos botões ou a estrutura do site no futuro, o robô pode parar de funcionar e precisará de ajustes no código.
 
 Boa sorte com seus estudos na AWS! ☁️
