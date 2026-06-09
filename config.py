@@ -7,6 +7,11 @@ load_dotenv()
 OCULTAR_TELA = False
 EMAIL = os.getenv("EMAIL")
 SENHA = os.getenv("SENHA")
+
+if not EMAIL or not SENHA:
+    print("ERRO CRÍTICO: Arquivo .env não encontrado ou incompleto!")
+    print("Por favor, crie um arquivo .env na pasta do projeto (você pode copiar o .env.example) e preencha seu EMAIL e SENHA.")
+    exit(1)
 URL_LOGIN = "https://awsrestart.instructure.com/login/canvas"
 URL_ATIVIDADES = "https://awsrestart.instructure.com/courses/4327/grades"
 BASE_URL = "https://awsrestart.instructure.com"
