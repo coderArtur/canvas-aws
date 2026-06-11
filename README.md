@@ -1,5 +1,5 @@
 <div align="center">
-        <h3>💙 Este projeto te ajudou de alguma forma?</h3>
+        <h3>💙 Este projeto te ajudou de alguma forma e você quer retribuir?</h3>
         <a href="https://livepix.gg/coderartur" target="_blank">
           <img src="https://img.shields.io/badge/Fazer_uma_Doa%C3%A7%C3%A3o_PIX-00BCA8?style=for-the-badge&logo=pix&logoColor=white" alt="Botão de Doação Pix"/>
         </a>
