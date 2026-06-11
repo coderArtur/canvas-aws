@@ -1,10 +1,17 @@
+<div align="center">
+        <h3>💙 Este projeto te ajudou de alguma forma?</h3>
+        <a href="https://livepix.gg/coderartur" target="_blank">
+          <img src="https://img.shields.io/badge/Fazer_uma_Doa%C3%A7%C3%A3o_PIX-00BCA8?style=for-the-badge&logo=pix&logoColor=white" alt="Botão de Doação Pix"/>
+        </a>
+</div>
+
+<br>
+
 # AWS Canvas Automator 🤖
 
 Bem-vindo ao **AWS Canvas Automator**! Este é um robô criado para automatizar a resolução das suas tarefas no Canvas da AWS (como os laboratórios Vocareum e os Knowledge Checks).
 
 Se você nunca usou programação antes, não se preocupe! Siga este passo a passo detalhado e o seu robô estará rodando em poucos minutos.
-
----
 
 ## 🚀 O que este robô faz?
 Ele acessa sua conta do Canvas da AWS e procura por tarefas pendentes, tarefas que já possuem notas ele irá ignorar. 
