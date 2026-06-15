@@ -80,9 +80,14 @@ def resolver_lab(nova_aba):
         relatorio_encontrado = False
         for _ in range(60):
             if nova_aba.locator('p#report_submission_msg_box:has-text("Executed at:")').is_visible():
-                time.sleep(2)
+                time.sleep(3)
                 try:
-                    nova_aba.locator('#modal-table-report-submission button.close[data-dismiss="modal"]').click(timeout=3000)
+                    nova_aba.keyboard.press("Escape")
+                    time.sleep(1)
+                    
+                    if nova_aba.locator('p#report_submission_msg_box').is_visible():
+                        modal_pai = nova_aba.locator('p#report_submission_msg_box').locator('xpath=ancestor::div[contains(@class, "modal-content")]')
+                        modal_pai.locator('button').first.click(force=True, timeout=3000)
                 except:
                     pass
                 relatorio_encontrado = True
